@@ -1,0 +1,319 @@
+@extends('layouts.app')
+
+@section('scripts')
+
+  <script>
+    
+    $('#personal_data_t_s_galery_update').on('submit', function() {
+      
+      var personal_data_t_s_galery_name = document.getElementById("name").value;
+      var personal_data_t_s_galery_description = document.getElementById("description").value;
+      
+      if(personal_data_t_s_galery_name.length >= 100)
+      {
+        alert("Invalid character number for the galery name.");
+        return false;
+      }
+      
+      if(personal_data_t_s_galery_description.length >= 1000)
+      {
+        alert("Invalid character number for the description.");
+        return false;
+      }
+      
+      if(personal_data_t_s_galery_name == '' || personal_data_t_s_galery_description == '')
+      {
+        alert("You need to complete all the fields.");
+        return false;
+      }
+      
+      if(personal_data_t_s_galery_name != '' && personal_data_t_s_galery_description != '')
+      {
+        return true;
+      }
+      
+      return false;
+      
+    });
+    
+  </script>
+
+@endsection
+
+@section('content')
+    
+  <section class="content-header">
+        
+    <h1> {!! $personalDataTSGalerie->name !!} </h1>
+  
+  </section>
+   
+  <div class="content">
+       
+    @include('adminlte-templates::common.errors')
+       
+    <div class="box box-primary">
+           
+      <div class="box-body">
+               
+        <div class="row">
+                   
+          {!! Form::model($personalDataTSGalerie, ['route' => ['personalDataTSGaleries.update', $personalDataTSGalerie->id], 'method' => 'patch',  'id' => 'personal_data_t_s_galery_update']) !!}
+
+            @include('personal_data_t_s_galeries.fields')
+
+          {!! Form::close() !!}
+               
+        </div>
+           
+      </div>
+       
+    </div>
+  
+  </div>
+  
+  <aside class="control-sidebar control-sidebar-dark control-sidebar-close" style="background: rgba(0,0,0,0.8);">
+  
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      
+      <li class="active">
+        
+        <a href="#images" data-toggle="tab">
+        
+          <i class="fa fa-file-image-o"></i>
+        
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="#a_galery_tasks" data-toggle="tab">
+        
+          <i class="fa fa-list"></i>
+        
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="#user_personal_data_galeries" data-toggle="tab">
+        
+          <i class="fa fa-share"></i>
+        
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="#galery_views" data-toggle="tab">
+        
+          <i class="fa fa-eye"></i>
+        
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="#galery_updates" data-toggle="tab">
+        
+          <i class="fa fa-edit"></i>
+        
+        </a>
+        
+      </li>
+    
+    </ul>
+    
+    <div class="tab-content" style="padding: 20px;">
+      
+      <div class="tab-pane active" id="images">
+        
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Personal Data Galery Images </h3>
+        
+        <ul class="control-sidebar-menu">
+          
+          @foreach($personalDataTSGImagesList as $personalDataTSGImageList)
+            
+              <li>
+                
+                <a href="{!! route('personalDataTSGaleryImages.show', [$personalDataTSGImageList -> id]) !!}">
+                  
+                  <i class="menu-icon fa fa-file-image-o bg-light-blue"></i>
+    
+                  <div class="menu-info">
+                    
+                    <h4 class="control-sidebar-subheading"> {!! $personalDataTSGImageList -> name !!} </h4>
+                    <p> {!! $personalDataTSGImageList -> created_at !!} </p>
+                  
+                  </div>
+                
+                </a>
+              
+              </li>
+            
+          @endforeach
+        
+        </ul>
+
+      </div>
+      
+      <div class="tab-pane" id="a_galery_tasks">
+        
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Personal Data Galery Tasks </h3>
+        
+        <ul class="control-sidebar-menu">
+          
+          @foreach($personalDataTSGaleryTodolistsList as $personalDataTSGaleryTodolistList)
+            
+              <li>
+                
+                <a href="{!! route('personalDataTSGaleryTodolists.show', [$personalDataTSGaleryTodolistList -> id]) !!}">
+                  
+                  <i class="menu-icon fa fa-square-o bg-light-blue"></i>
+    
+                  <div class="menu-info">
+                    
+                    <h4 class="control-sidebar-subheading"> {!! $personalDataTSGaleryTodolistList -> name !!} </h4>
+                    <p> {!! $personalDataTSGaleryTodolistList -> created_at !!} </p>
+                  
+                  </div>
+                
+                </a>
+              
+              </li>
+            
+          @endforeach
+          
+        </ul>
+          
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Personal Data Galery Completed Tasks </h3>
+        
+        <ul class="control-sidebar-menu">
+            
+          @foreach($personalDataTSGaleryTodolistsCompletedList as $personalDataTSGaleryTodolistCompletedList)
+              
+            <li>
+                  
+              <a href="{!! route('personalDataTSGaleryTodolists.show', [$personalDataTSGaleryTodolistCompletedList -> id]) !!}">
+                    
+                <i class="menu-icon fa fa-check-square-o bg-light-blue"></i>
+      
+                <div class="menu-info">
+                      
+                  <h4 class="control-sidebar-subheading"> {!! $personalDataTSGaleryTodolistCompletedList -> name !!} </h4>
+                  <p> {!! $personalDataTSGaleryTodolistCompletedList -> created_at !!} </p>
+                    
+                </div>
+                  
+              </a>
+                
+            </li>
+              
+          @endforeach
+          
+        </ul>
+
+      </div>
+      
+      <div class="tab-pane" id="user_personal_data_galeries">
+        
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Shared Personal Data Galery Users  </h3>
+        
+        <ul class="control-sidebar-menu">
+          
+          @foreach($userPersonalDataTSGaleriesList as $userPersonalDataTSGaleryList)
+            
+              <li>
+                
+                <a href="">
+                  
+                  <i class="menu-icon fa fa-share bg-light-blue"></i>
+    
+                  <div class="menu-info">
+                    
+                    <h4 class="control-sidebar-subheading"> {!! $userPersonalDataTSGaleryList -> name !!} </h4>
+                    <p> {!! $userPersonalDataTSGaleryList -> datetime !!} </p>
+                  
+                  </div>
+                
+                </a>
+              
+              </li>
+            
+          @endforeach
+        
+        </ul>
+
+      </div>
+      
+      <div class="tab-pane" id="galery_views">
+        
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Personal Data Galery Views </h3>
+        
+        <ul class="control-sidebar-menu">
+          
+          @foreach($personalDataTSGaleryViewsList as $personalDataTSGaleryViewList)
+            
+              <li>
+                
+                <a href="">
+                  
+                  <i class="menu-icon fa fa-eye bg-light-blue"></i>
+    
+                  <div class="menu-info">
+                    
+                    <h4 class="control-sidebar-subheading"> {!! $personalDataTSGaleryViewList -> name !!} </h4>
+                    <p> {!! $personalDataTSGaleryViewList -> datetime !!} </p>
+                  
+                  </div>
+                
+                </a>
+              
+              </li>
+            
+          @endforeach
+        
+        </ul>
+
+      </div>
+      
+      <div class="tab-pane" id="galery_updates">
+        
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Personal Data Galery Updates </h3>
+        
+        <ul class="control-sidebar-menu">
+          
+          @foreach($personalDataTSGaleryUpdatesList as $personalDataTSGaleryUpdateList)
+            
+              <li>
+                
+                <a href="">
+                  
+                  <i class="menu-icon fa fa-edit bg-light-blue"></i>
+    
+                  <div class="menu-info">
+                    
+                    <h4 class="control-sidebar-subheading"> {!! $personalDataTSGaleryUpdateList -> name !!} </h4>
+                    <p> {!! $personalDataTSGaleryUpdateList -> datetime !!} </p>
+                  
+                  </div>
+                
+                </a>
+              
+              </li>
+            
+          @endforeach
+        
+        </ul>
+
+      </div>
+      
+    </div>
+    
+  </aside>
+
+@endsection
