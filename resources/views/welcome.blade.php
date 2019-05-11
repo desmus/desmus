@@ -15,7 +15,11 @@
     <style>
             
       html, body {
-        background-color: #fff;
+        /*background-color: #fff;*/
+        background-image: url(/images/background_4.jpeg);
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 68%;
         color: #636b6f;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
@@ -49,7 +53,7 @@
 
       .title {
         font-size: 84px;
-        border-bottom: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
       }
 
       .links > a {
@@ -93,7 +97,7 @@
             
       @endif
 
-      <div class="content">
+      <div class="content" style="background: rgba(0,0,0,0.7); color: #fff; width: 90%; padding: 10% 2%;">
                 
         <div class="title m-b-md">
                     
@@ -103,9 +107,9 @@
         </div>
 
         <div class="links">
-          <a href="">About</a>
-          <a href="">Community</a>
-          <a href="">Contact</a>
+          <a href="" style="color: #fff;">About</a>
+          <a href="" style="color: #fff;">Community</a>
+          <a href="" style="color: #fff;">Contact</a>
         </div>
       
       </div>
