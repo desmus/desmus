@@ -120,22 +120,22 @@
                                       
                                       @if($college_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_p={!! $college_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_p={!! $college_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_p={!! $college_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_p={!! $college_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_p={!! $college_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_p={!! $college_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -209,22 +209,22 @@
                                       
                                       @if($college_topic_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_topic_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_topic_p={!! $college_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_topic_p={!! $college_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_topic_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_topic_p={!! $college_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_topic_p={!! $college_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_topic_p={!! $college_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_topic_p={!! $college_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -298,22 +298,22 @@
                                       
                                       @if($college_section_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_section_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_section_p={!! $college_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_section_p={!! $college_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_section_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_section_p={!! $college_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_section_p={!! $college_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_section_p={!! $college_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_section_p={!! $college_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -387,22 +387,22 @@
                                       
                                       @if($college_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_file_p={!! $college_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_file_p={!! $college_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_file_p={!! $college_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_file_p={!! $college_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_file_p={!! $college_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_file_p={!! $college_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -476,22 +476,22 @@
                                       
                                       @if($college_note_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_note_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_note_p={!! $college_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_note_p={!! $college_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_note_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_note_p={!! $college_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_note_p={!! $college_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_note_p={!! $college_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_note_p={!! $college_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -565,22 +565,22 @@
                                       
                                       @if($college_galery_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_galery_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_galery_p={!! $college_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_galery_p={!! $college_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_galery_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_galery_p={!! $college_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_galery_p={!! $college_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_galery_p={!! $college_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_galery_p={!! $college_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -654,22 +654,22 @@
                                       
                                       @if($college_image_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_image_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_image_p={!! $college_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_image_p={!! $college_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_image_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_image_p={!! $college_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_image_p={!! $college_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_image_p={!! $college_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_image_p={!! $college_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -743,22 +743,22 @@
                                       
                                       @if($college_playlist_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_playlist_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_playlist_p={!! $college_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_playlist_p={!! $college_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_playlist_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_playlist_p={!! $college_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_playlist_p={!! $college_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_playlist_p={!! $college_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_playlist_p={!! $college_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -832,22 +832,22 @@
                                       
                                       @if($college_audio_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_audio_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_audio_p={!! $college_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_audio_p={!! $college_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_audio_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_audio_p={!! $college_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_audio_p={!! $college_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_audio_p={!! $college_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_audio_p={!! $college_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -921,22 +921,22 @@
                                       
                                       @if($college_tool_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_tool_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_p={!! $college_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_p={!! $college_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_tool_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_p={!! $college_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_p={!! $college_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_p={!! $college_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_p={!! $college_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1010,22 +1010,22 @@
                                       
                                       @if($college_tool_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($college_tool_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_file_p={!! $college_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_file_p={!! $college_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($college_tool_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_file_p={!! $college_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?college_tool_file_p={!! $college_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_file_p={!! $college_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?college_tool_file_p={!! $college_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1143,22 +1143,22 @@
                                       
                                       @if($job_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_p={!! $job_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_p={!! $job_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_p={!! $job_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_p={!! $job_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_p={!! $job_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_p={!! $job_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1232,22 +1232,22 @@
                                       
                                       @if($job_topic_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_topic_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_topic_p={!! $job_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_topic_p={!! $job_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_topic_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_topic_p={!! $job_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_topic_p={!! $job_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_topic_p={!! $job_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_topic_p={!! $job_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1321,22 +1321,22 @@
                                       
                                       @if($job_section_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_section_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_section_p={!! $job_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_section_p={!! $job_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_section_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_section_p={!! $job_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_section_p={!! $job_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_section_p={!! $job_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_section_p={!! $job_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1410,22 +1410,22 @@
                                       
                                       @if($job_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_file_p={!! $job_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_file_p={!! $job_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_file_p={!! $job_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_file_p={!! $job_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_file_p={!! $job_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_file_p={!! $job_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1499,22 +1499,22 @@
                                       
                                       @if($job_note_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_note_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_note_p={!! $job_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_note_p={!! $job_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_note_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_note_p={!! $job_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_note_p={!! $job_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_note_p={!! $job_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_note_p={!! $job_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1588,22 +1588,22 @@
                                       
                                       @if($job_galery_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_galery_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_galery_p={!! $job_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_galery_p={!! $job_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_galery_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_galery_p={!! $job_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_galery_p={!! $job_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_galery_p={!! $job_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_galery_p={!! $job_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1677,22 +1677,22 @@
                                       
                                       @if($job_image_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_image_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_image_p={!! $job_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_image_p={!! $job_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_image_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_image_p={!! $job_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_image_p={!! $job_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_image_p={!! $job_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_image_p={!! $job_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1766,22 +1766,22 @@
                                       
                                       @if($job_playlist_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_playlist_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_playlist_p={!! $job_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_playlist_p={!! $job_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_playlist_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_playlist_p={!! $job_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_playlist_p={!! $job_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_playlist_p={!! $job_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_playlist_p={!! $job_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1855,22 +1855,22 @@
                                       
                                       @if($job_audio_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_audio_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_audio_p={!! $job_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_audio_p={!! $job_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_audio_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_audio_p={!! $job_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_audio_p={!! $job_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_audio_p={!! $job_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_audio_p={!! $job_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -1944,22 +1944,22 @@
                                       
                                       @if($job_tool_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_tool_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_p={!! $job_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_p={!! $job_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_tool_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_p={!! $job_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_p={!! $job_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_p={!! $job_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_p={!! $job_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2033,22 +2033,22 @@
                                       
                                       @if($job_tool_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($job_tool_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_file_p={!! $job_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_file_p={!! $job_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($job_tool_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_file_p={!! $job_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?job_tool_file_p={!! $job_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_file_p={!! $job_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?job_tool_file_p={!! $job_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2166,22 +2166,22 @@
                                       
                                       @if($project_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_p={!! $project_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_p={!! $project_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_p={!! $project_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_p={!! $project_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_p={!! $project_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_p={!! $project_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2255,22 +2255,22 @@
                                       
                                       @if($project_topic_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_topic_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_topic_p={!! $project_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_topic_p={!! $project_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_topic_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_topic_p={!! $project_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_topic_p={!! $project_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_topic_p={!! $project_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_topic_p={!! $project_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2344,22 +2344,22 @@
                                       
                                       @if($project_section_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_section_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_section_p={!! $project_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_section_p={!! $project_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_section_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_section_p={!! $project_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_section_p={!! $project_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_section_p={!! $project_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_section_p={!! $project_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2433,22 +2433,22 @@
                                       
                                       @if($project_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_file_p={!! $project_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_file_p={!! $project_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_file_p={!! $project_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_file_p={!! $project_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_file_p={!! $project_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_file_p={!! $project_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2522,22 +2522,22 @@
                                       
                                       @if($project_note_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_note_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_note_p={!! $project_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_note_p={!! $project_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_note_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_note_p={!! $project_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_note_p={!! $project_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_note_p={!! $project_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_note_p={!! $project_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2611,22 +2611,22 @@
                                       
                                       @if($project_galery_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_galery_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_galery_p={!! $project_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_galery_p={!! $project_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_galery_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_galery_p={!! $project_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_galery_p={!! $project_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_galery_p={!! $project_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_galery_p={!! $project_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2700,22 +2700,22 @@
                                       
                                       @if($project_image_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_image_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_image_p={!! $project_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_image_p={!! $project_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_image_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_image_p={!! $project_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_image_p={!! $project_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_image_p={!! $project_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_image_p={!! $project_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2789,22 +2789,22 @@
                                       
                                       @if($project_playlist_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_playlist_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_playlist_p={!! $project_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_playlist_p={!! $project_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_playlist_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_playlist_p={!! $project_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_playlist_p={!! $project_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_playlist_p={!! $project_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_playlist_p={!! $project_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2878,22 +2878,22 @@
                                       
                                       @if($project_audio_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_audio_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_audio_p={!! $project_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_audio_p={!! $project_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_audio_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_audio_p={!! $project_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_audio_p={!! $project_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_audio_p={!! $project_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_audio_p={!! $project_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -2967,22 +2967,22 @@
                                       
                                       @if($project_tool_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_tool_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_p={!! $project_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_p={!! $project_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_tool_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_p={!! $project_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_p={!! $project_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_p={!! $project_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_p={!! $project_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3056,22 +3056,22 @@
                                       
                                       @if($project_tool_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($project_tool_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_file_p={!! $project_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_file_p={!! $project_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($project_tool_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_file_p={!! $project_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?project_tool_file_p={!! $project_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_file_p={!! $project_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?project_tool_file_p={!! $project_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3189,22 +3189,22 @@
                                       
                                       @if($personal_data_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_p={!! $personal_data_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_p={!! $personal_data_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_p={!! $personal_data_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_p={!! $personal_data_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_p={!! $personal_data_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_p={!! $personal_data_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3278,22 +3278,22 @@
                                       
                                       @if($personal_data_topic_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_topic_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_topic_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_topic_p={!! $personal_data_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_topic_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_topic_p={!! $personal_data_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_topic_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_topic_p={!! $personal_data_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_topic_p={!! $personal_data_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_topic_p={!! $personal_data_topic_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_topic_p={!! $personal_data_topic_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3367,22 +3367,22 @@
                                       
                                       @if($personal_data_section_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_section_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_section_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_section_p={!! $personal_data_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_section_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_section_p={!! $personal_data_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_section_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_section_p={!! $personal_data_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_section_p={!! $personal_data_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_section_p={!! $personal_data_section_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_section_p={!! $personal_data_section_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3456,22 +3456,22 @@
                                       
                                       @if($personal_data_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_file_p={!! $personal_data_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_file_p={!! $personal_data_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_file_p={!! $personal_data_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_file_p={!! $personal_data_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_file_p={!! $personal_data_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_file_p={!! $personal_data_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3545,22 +3545,22 @@
                                       
                                       @if($personal_data_note_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_note_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_note_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_note_p={!! $personal_data_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_note_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_note_p={!! $personal_data_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_note_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_note_p={!! $personal_data_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_note_p={!! $personal_data_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_note_p={!! $personal_data_note_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_note_p={!! $personal_data_note_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3634,22 +3634,22 @@
                                       
                                       @if($personal_data_galery_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_galery_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_galery_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_galery_p={!! $personal_data_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_galery_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_galery_p={!! $personal_data_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_galery_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_galery_p={!! $personal_data_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_galery_p={!! $personal_data_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_galery_p={!! $personal_data_galery_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_galery_p={!! $personal_data_galery_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3723,22 +3723,22 @@
                                       
                                       @if($personal_data_image_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_image_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_image_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_image_p={!! $personal_data_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_image_p={!! $personal_data_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3812,22 +3812,22 @@
                                       
                                       @if($personal_data_playlist_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_playlist_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_playlist_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_playlist_p={!! $personal_data_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_playlist_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_playlist_p={!! $personal_data_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_playlist_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_playlist_p={!! $personal_data_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_playlist_p={!! $personal_data_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_playlist_p={!! $personal_data_playlist_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_playlist_p={!! $personal_data_playlist_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3901,22 +3901,22 @@
                                       
                                       @if($personal_data_audio_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_audio_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_audio_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_audio_p={!! $personal_data_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_audio_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_audio_p={!! $personal_data_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_audio_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_audio_p={!! $personal_data_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_audio_p={!! $personal_data_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_audio_p={!! $personal_data_audio_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_audio_p={!! $personal_data_audio_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -3990,22 +3990,22 @@
                                       
                                       @if($personal_data_tool_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_tool_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_p={!! $personal_data_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_p={!! $personal_data_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_tool_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_p={!! $personal_data_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_p={!! $personal_data_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_p={!! $personal_data_tool_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_p={!! $personal_data_tool_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       
@@ -4079,22 +4079,22 @@
                                       
                                       @if($personal_data_tool_file_p < 1)
                         
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_file_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                       
                                       @endif
                                       
                                       @if($personal_data_tool_file_p == 1)
                                                   
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_file_p={!! $personal_data_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_file_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_file_p={!! $personal_data_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
               
                                       @endif
                                       
                                       @if($personal_data_tool_file_p > 1)
                                       
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_file_p={!! $personal_data_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                        <a href = "http://desmus-jmsp.c9users.io/sharedFiles?personal_data_tool_file_p={!! $personal_data_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_file_p={!! $personal_data_tool_file_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                        <a href = "http://www.desmus.com.mx/sharedFiles?personal_data_tool_file_p={!! $personal_data_tool_file_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                         
                                       @endif
                                       

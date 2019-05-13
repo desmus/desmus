@@ -15,7 +15,7 @@
     <style>
             
       html, body {
-        /*background-color: #fff;*/
+        /**background-color: #fff;**/
         background-image: url(/images/background_4.jpeg);
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */

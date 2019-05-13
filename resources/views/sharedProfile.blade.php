@@ -668,7 +668,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -705,7 +705,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -742,7 +742,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -779,7 +779,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -2685,7 +2685,7 @@
                                       
                                       <img class="img-circle" src="images/users/image_{!! $sharedProfile -> user_id !!}.gif" alt="User Image">
                                       
-                                      <span class="username"><a href="http://desmus-jmsp.c9users.io/sharedProfileUser/{!! $sharedProfile -> id !!}">{!! $sharedProfile -> name !!}</a></span>
+                                      <span class="username"><a href="http://www.desmus.com.mx/sharedProfileUser/{!! $sharedProfile -> id !!}">{!! $sharedProfile -> name !!}</a></span>
                                       <span class="description">Shared prodile - {!! $sharedProfile -> created_at !!}</span>
                                       
                                       <!-- Check datetime -->
@@ -2694,7 +2694,7 @@
                                 
                                     <div class="box-tools">
                                                 
-                                      <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read"><a href="http://desmus-jmsp.c9users.io/sharedProfileUser/{!! $sharedProfile -> id !!}"><i class="fa fa-eye"></i></a></button>
+                                      <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read"><a href="http://www.desmus.com.mx/sharedProfileUser/{!! $sharedProfile -> id !!}"><i class="fa fa-eye"></i></a></button>
                                       <button type="button" class="btn btn-box-tool" data-toggle="collapse" data-target="#file_list_{!! $sharedProfile -> id !!}"><i class="fa fa-minus"></i></button>
                                       
                                     </div>

@@ -794,7 +794,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -831,7 +831,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -868,7 +868,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -905,7 +905,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -942,7 +942,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/publicProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/publicProfile </p>
             
         </div>
           
@@ -2858,7 +2858,7 @@
           
                                 <div class="box box-widget widget-user">
                                   
-                                  <div class="widget-user-header bg-aqua-active" style="background-image: url('http://desmus-jmsp.c9users.io/images/public_advertisement_images/image_{!! $publicAdvertisement -> id !!}.{!! $publicAdvertisement -> image_type !!}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                                  <div class="widget-user-header bg-aqua-active" style="background-image: url('http://www.desmus.com.mx/images/public_advertisement_images/image_{!! $publicAdvertisement -> id !!}.{!! $publicAdvertisement -> image_type !!}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                                     
                                     @if(isset($publicAdvertisementUsers))
                                     
@@ -5287,7 +5287,7 @@
                         
                                               <div class="box box-widget widget-user">
                                                 
-                                                <div class="widget-user-header bg-aqua-active" style="background-image: url('http://desmus-jmsp.c9users.io/images/public_advertisement_images/image_{!! $publicAdvertisementList -> id !!}.{!! $publicAdvertisementList -> image_type !!}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                                                <div class="widget-user-header bg-aqua-active" style="background-image: url('http://www.desmus.com.mx/images/public_advertisement_images/image_{!! $publicAdvertisementList -> id !!}.{!! $publicAdvertisementList -> image_type !!}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                                                   
                                                   @if(isset($publicAdvertisementUsersList))
                                                   

@@ -1784,22 +1784,22 @@
                                     
                         @if($recent_activity_p < 1)
                         
-                          <a href = "http://desmus-jmsp.c9users.io/homes?recent_activity_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                          <a href = "http://desmus-jmsp.c9users.io/homes?recent_activity_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                          <a href = "http://www.desmus.com.mx/homes?recent_activity_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                          <a href = "http://www.desmus.com.mx/homes?recent_activity_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                         
                         @endif
                         
                         @if($recent_activity_p == 1)
                                     
-                          <a href = "http://desmus-jmsp.c9users.io/homes?recent_activity_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                          <a href = "http://desmus-jmsp.c9users.io/homes?recent_activity_p={!! $recent_activity_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                          <a href = "http://www.desmus.com.mx/homes?recent_activity_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                          <a href = "http://www.desmus.com.mx/homes?recent_activity_p={!! $recent_activity_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
 
                         @endif
                         
                         @if($recent_activity_p > 1)
                         
-                          <a href = "http://desmus-jmsp.c9users.io/homes?recent_activity_p={!! $recent_activity_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                          <a href = "http://desmus-jmsp.c9users.io/homes?recent_activity_p={!! $recent_activity_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                          <a href = "http://www.desmus.com.mx/homes?recent_activity_p={!! $recent_activity_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                          <a href = "http://www.desmus.com.mx/homes?recent_activity_p={!! $recent_activity_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                           
                         @endif
                                     
@@ -1848,22 +1848,22 @@
                                       
                             @if($contact_p < 1)
                             
-                              <a href = "http://desmus-jmsp.c9users.io/homes?contact_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                              <a href = "http://desmus-jmsp.c9users.io/homes?contact_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                              <a href = "http://www.desmus.com.mx/homes?contact_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                              <a href = "http://www.desmus.com.mx/homes?contact_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                             
                             @endif
                             
                             @if($contact_p == 1)
                                         
-                              <a href = "http://desmus-jmsp.c9users.io/homes?contact_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                              <a href = "http://desmus-jmsp.c9users.io/homes?contact_p={!! $contact_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                              <a href = "http://www.desmus.com.mx/homes?contact_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                              <a href = "http://www.desmus.com.mx/homes?contact_p={!! $contact_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
     
                             @endif
                             
                             @if($contact_p > 1)
                             
-                              <a href = "http://desmus-jmsp.c9users.io/homes?contact_p={!! $contact_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                              <a href = "http://desmus-jmsp.c9users.io/homes?contact_p={!! $contact_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                              <a href = "http://www.desmus.com.mx/homes?contact_p={!! $contact_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                              <a href = "http://www.desmus.com.mx/homes?contact_p={!! $contact_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                               
                             @endif
                                       
@@ -1955,22 +1955,22 @@
                                     
                                   @if($r_message_p < 1)
                         
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                   
                                   @endif
                                   
                                   @if($r_message_p == 1)
                                               
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
           
                                   @endif
                                   
                                   @if($r_message_p > 1)
                                   
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p={!! $r_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p={!! $r_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                     
                                   @endif
                                     
@@ -2029,22 +2029,22 @@
                                     
                                   @if($r_message_p < 1)
                         
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                   
                                   @endif
                                   
                                   @if($r_message_p == 1)
                                               
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
           
                                   @endif
                                   
                                   @if($r_message_p > 1)
                                   
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p={!! $r_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p={!! $r_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?r_message_p={!! $r_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                     
                                   @endif
                                     
@@ -2103,22 +2103,22 @@
                                     
                                   @if($s_message_p < 1)
                         
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                   
                                   @endif
                                   
                                   @if($s_message_p == 1)
                                               
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
           
                                   @endif
                                   
                                   @if($s_message_p > 1)
                                   
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p={!! $s_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p={!! $s_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                     
                                   @endif
                                     
@@ -2180,22 +2180,22 @@
                                     
                                   @if($s_message_p < 1)
                         
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                   
                                   @endif
                                   
                                   @if($s_message_p == 1)
                                               
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
           
                                   @endif
                                   
                                   @if($s_message_p > 1)
                                   
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p={!! $s_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                                    <a href = "http://desmus-jmsp.c9users.io/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p={!! $s_message_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                                    <a href = "http://www.desmus.com.mx/homes?s_message_p={!! $s_message_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                                     
                                   @endif
                                     

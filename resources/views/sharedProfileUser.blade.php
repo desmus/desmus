@@ -668,7 +668,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/sharedProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/sharedProfile </p>
             
         </div>
           
@@ -705,7 +705,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/sharedProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/sharedProfile </p>
             
         </div>
           
@@ -742,7 +742,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/sharedProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/sharedProfile </p>
             
         </div>
           
@@ -779,7 +779,7 @@
           
         <div class="modal-body">
           
-          <p style="margin: 20px;"> http://desmus-jmsp.c9users.io/sharedProfile </p>
+          <p style="margin: 20px;"> http://www.desmus.com.mx/sharedProfile </p>
             
         </div>
           
