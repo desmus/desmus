@@ -80,7 +80,7 @@ class SharedProfileImageCResponseController extends AppBaseController
                 $input = $request->all();
                 $sharedProfileImageCResponse = $this->sharedProfileImageCResponseRepository->create($input);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileImageCResponse -> status, 'status' => 'active', 'type' => 'p_i_c_r_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageCResponse -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileImageCResponse -> status, 'status' => 'active', 'type' => 's_p_i_c_r_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageCResponse -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Image C Response saved successfully.');
                 return redirect(route('sharedProfile.index'));
@@ -178,7 +178,7 @@ class SharedProfileImageCResponseController extends AppBaseController
             {
                 $sharedProfileImageCResponse = $this->sharedProfileImageCResponseRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileImageCResponse -> status, 'status' => 'active', 'type' => 'p_i_c_r_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageCResponse -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileImageCResponse -> status, 'status' => 'active', 'type' => 's_p_i_c_r_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageCResponse -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Image C Response updated successfully.');
                 return redirect(route('sharedProfileImageCResponses.index'));
@@ -214,7 +214,7 @@ class SharedProfileImageCResponseController extends AppBaseController
             {
                 $this->sharedProfileImageCResponseRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileImageCResponse -> status, 'status' => 'active', 'type' => 'p_i_c_r_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageCResponse -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileImageCResponse -> status, 'status' => 'active', 'type' => 's_p_i_c_r_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageCResponse -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Image C Response deleted successfully.');
                 return redirect(route('sharedProfileImageCResponses.index'));

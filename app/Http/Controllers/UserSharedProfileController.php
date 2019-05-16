@@ -91,7 +91,7 @@ class UserSharedProfileController extends AppBaseController
                     
                     $user = DB::table('user_shared_profile')->join('users', 'users.id', '=', 'user_shared_profile.user_id')->where('user_shared_profile.id', '=', $userSharedProfile -> id)->select('name')->get();
                     
-                    DB::table('recent_activities')->insert(['name' => $user[0] -> name, 'status' => 'active', 'type' => 'u_c_c', 'user_id' => $user_id, 'entity_id' => $userSharedProfile -> shared_user_id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $user[0] -> name, 'status' => 'active', 'type' => 'u_s_p_c', 'user_id' => $user_id, 'entity_id' => $userSharedProfile -> shared_user_id, 'created_at' => $now]);
                 
                     Flash::success('User Shared Profile saved successfully.');
                     return redirect(route('userSharedProfiles.show', [$userSharedProfile -> user_id]));
@@ -236,7 +236,7 @@ class UserSharedProfileController extends AppBaseController
                     $user_id = Auth::user()->id;
                     $user = DB::table('user_shared_profile')->join('users', 'users.id', '=', 'user_shared_profile.user_id')->where('user_shared_profile.id', '=', $userSharedProfile -> id)->select('name')->get();
                     
-                    DB::table('recent_activities')->insert(['name' => $user[0] -> name, 'status' => 'active', 'type' => 'u_c_u', 'user_id' => $user_id, 'entity_id' => $userSharedProfile -> shared_user_id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $user[0] -> name, 'status' => 'active', 'type' => 'u_s_p_u', 'user_id' => $user_id, 'entity_id' => $userSharedProfile -> shared_user_id, 'created_at' => $now]);
                 
                     Flash::success('User Shared Profile updated successfully.');
                     return redirect(route('userSharedProfiles.show', [$userSharedProfile -> user_id]));
@@ -290,7 +290,7 @@ class UserSharedProfileController extends AppBaseController
                     $user_id = Auth::user()->id;
                     $user = DB::table('user_shared_profile')->join('users', 'users.id', '=', 'user_shared_profile.user_id')->where('user_shared_profile.id', '=', $userSharedProfile -> id)->select('name')->get();
                     
-                    DB::table('recent_activities')->insert(['name' => $user[0] -> name, 'status' => 'active', 'type' => 'u_c_d', 'user_id' => $user_id, 'entity_id' => $userSharedProfile -> shared_user_id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $user[0] -> name, 'status' => 'active', 'type' => 'u_s_p_d', 'user_id' => $user_id, 'entity_id' => $userSharedProfile -> shared_user_id, 'created_at' => $now]);
                 
                     Flash::success('User Shared Profile deleted successfully.');
                     return redirect(route('userSharedProfiles.show', [$userSharedProfile -> user_id]));

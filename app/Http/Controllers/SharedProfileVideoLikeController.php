@@ -84,7 +84,7 @@ class SharedProfileVideoLikeController extends AppBaseController
                 {
                     $sharedProfileVideoLike = $this->sharedProfileVideoLikeRepository->create($input);
         
-                    DB::table('recent_activities')->insert(['name' => $sharedProfileVideoLike -> status, 'status' => 'active', 'type' => 'p_v_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideoLike -> id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $sharedProfileVideoLike -> status, 'status' => 'active', 'type' => 's_p_v_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideoLike -> id, 'created_at' => $now]);
         
                     Flash::success('Shared Profile Video Like saved successfully.');
                     return redirect(route('sharedProfile.index'));
@@ -188,7 +188,7 @@ class SharedProfileVideoLikeController extends AppBaseController
             {
                 $sharedProfileVideoLike = $this->sharedProfileVideoLikeRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileVideoLike -> status, 'status' => 'active', 'type' => 'p_v_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideoLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileVideoLike -> status, 'status' => 'active', 'type' => 's_p_v_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideoLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Video Like updated successfully.');
                 return redirect(route('sharedProfileVideoLikes.index'));
@@ -224,7 +224,7 @@ class SharedProfileVideoLikeController extends AppBaseController
             {
                 $this->sharedProfileVideoLikeRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileVideoLike -> status, 'status' => 'active', 'type' => 'p_v_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideoLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileVideoLike -> status, 'status' => 'active', 'type' => 's_p_v_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideoLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Video Like deleted successfully.');
                 return redirect(route('sharedProfileVideoLikes.index'));

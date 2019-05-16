@@ -84,7 +84,7 @@ class SharedProfileNoteLikeController extends AppBaseController
                 {
                     $sharedProfileNoteLike = $this->sharedProfileNoteLikeRepository->create($input);
             
-                    DB::table('recent_activities')->insert(['name' => $sharedProfileNoteLike -> status, 'status' => 'active', 'type' => 'p_n_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteLike -> id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $sharedProfileNoteLike -> status, 'status' => 'active', 'type' => 's_p_n_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteLike -> id, 'created_at' => $now]);
             
                     Flash::success('Shared Profile Note Like saved successfully.');
                     return redirect(route('sharedProfile.index'));
@@ -188,7 +188,7 @@ class SharedProfileNoteLikeController extends AppBaseController
             {
                 $sharedProfileNoteLike = $this->sharedProfileNoteLikeRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteLike -> status, 'status' => 'active', 'type' => 'p_n_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteLike -> status, 'status' => 'active', 'type' => 's_p_n_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Note Like updated successfully.');
                 return redirect(route('sharedProfileNoteLikes.index'));
@@ -224,7 +224,7 @@ class SharedProfileNoteLikeController extends AppBaseController
             {
                 $this->sharedProfileNoteLikeRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteLike -> status, 'status' => 'active', 'type' => 'p_n_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteLike -> status, 'status' => 'active', 'type' => 's_p_n_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Note Like deleted successfully.');
                 return redirect(route('sharedProfileNoteLikes.index'));

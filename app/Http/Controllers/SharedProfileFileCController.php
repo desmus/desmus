@@ -178,7 +178,7 @@ class SharedProfileFileCController extends AppBaseController
             {
                 $sharedProfileFileC = $this->sharedProfileFileCRepository->update($request->all(), $id);
             
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileC -> status, 'status' => 'active', 'type' => 'p_f_c_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileC -> status, 'status' => 'active', 'type' => 's_p_f_c_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileC -> id, 'created_at' => $now]);
     
                 Flash::success('Shared Profile File C updated successfully.');
                 return redirect(route('sharedProfileFileCs.index'));
@@ -214,7 +214,7 @@ class SharedProfileFileCController extends AppBaseController
             {
                 $this->sharedProfileFileCRepository->delete($id);
                 
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileC -> status, 'status' => 'active', 'type' => 'p_f_c_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileC -> status, 'status' => 'active', 'type' => 's_p_f_c_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileC -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File C deleted successfully.');
                 return redirect(route('sharedProfileFileCs.index'));

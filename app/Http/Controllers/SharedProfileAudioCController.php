@@ -79,7 +79,7 @@ class SharedProfileAudioCController extends AppBaseController
                 $input = $request->all();
                 $sharedProfileAudioC = $this->sharedProfileAudioCRepository->create($input);
                 
-                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioC -> status, 'status' => 'active', 'type' => 'p_a_c_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioC -> status, 'status' => 'active', 'type' => 's_p_a_c_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioC -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Audio C saved successfully.');
                 return redirect(route('sharedProfile.index'));
@@ -177,7 +177,7 @@ class SharedProfileAudioCController extends AppBaseController
             {
                 $sharedProfileAudioC = $this->sharedProfileAudioCRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioC -> status, 'status' => 'active', 'type' => 'p_a_c_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioC -> status, 'status' => 'active', 'type' => 's_p_a_c_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioC -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Audio C updated successfully.');
                 return redirect(route('sharedProfileAudioCs.index'));
@@ -213,7 +213,7 @@ class SharedProfileAudioCController extends AppBaseController
             {
                 $this->sharedProfileAudioCRepository->delete($id);
                 
-                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioC -> status, 'status' => 'active', 'type' => 'p_a_c_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioC -> status, 'status' => 'active', 'type' => 's_p_a_c_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioC -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Audio C deleted successfully.');
                 return redirect(route('sharedProfileAudioCs.index'));

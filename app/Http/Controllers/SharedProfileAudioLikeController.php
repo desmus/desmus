@@ -84,7 +84,7 @@ class SharedProfileAudioLikeController extends AppBaseController
                 {
                     $sharedProfileAudioLike = $this->sharedProfileAudioLikeRepository->create($input);
         
-                    DB::table('recent_activities')->insert(['name' => $sharedProfileAudioLike -> status, 'status' => 'active', 'type' => 'p_a_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioLike -> id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $sharedProfileAudioLike -> status, 'status' => 'active', 'type' => 's_p_a_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioLike -> id, 'created_at' => $now]);
         
                     Flash::success('Shared Profile Audio Like saved successfully.');
                     return redirect(route('sharedProfile.index'));
@@ -186,7 +186,7 @@ class SharedProfileAudioLikeController extends AppBaseController
         {
             $sharedProfileAudioLike = $this->sharedProfileAudioLikeRepository->update($request->all(), $id);
     
-            DB::table('recent_activities')->insert(['name' => $sharedProfileAudioLike -> status, 'status' => 'active', 'type' => 'p_a_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioLike -> id, 'created_at' => $now]);
+            DB::table('recent_activities')->insert(['name' => $sharedProfileAudioLike -> status, 'status' => 'active', 'type' => 's_p_a_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioLike -> id, 'created_at' => $now]);
     
             Flash::success('Shared Profile Audio Like updated successfully.');
             return redirect(route('sharedProfileAudioLikes.index'));
@@ -216,7 +216,7 @@ class SharedProfileAudioLikeController extends AppBaseController
             {
                 $this->sharedProfileAudioLikeRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioLike -> status, 'status' => 'active', 'type' => 'p_a_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileAudioLike -> status, 'status' => 'active', 'type' => 's_p_a_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileAudioLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Audio Like deleted successfully.');
                 return redirect(route('sharedProfileAudioLikes.index'));

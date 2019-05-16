@@ -18,9 +18,9 @@
                
         <div class="row">
                    
-          {!! Form::model($sharedProfileFileComment, ['route' => ['sharedProfileFileComments.update', $sharedProfileFileComment->id], 'method' => 'patch']) !!}
+          {!! Form::model($sharedProfileFileC, ['route' => ['sharedProfileFileCs.update', $sharedProfileFileC->id], 'method' => 'patch']) !!}
 
-            @include('shared_profile_file_comments.fields')
+            @include('shared_profile_file_cs.fields')
 
           {!! Form::close() !!}
                

@@ -84,7 +84,7 @@ class SharedProfileImageLikeController extends AppBaseController
                 {
                     $sharedProfileImageLike = $this->sharedProfileImageLikeRepository->create($input);
             
-                    DB::table('recent_activities')->insert(['name' => $sharedProfileImageLike -> status, 'status' => 'active', 'type' => 'p_i_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageLike -> id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $sharedProfileImageLike -> status, 'status' => 'active', 'type' => 's_p_i_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageLike -> id, 'created_at' => $now]);
             
                     Flash::success('Shared Profile Image Like saved successfully.');
                     return redirect(route('sharedProfile.index'));
@@ -188,7 +188,7 @@ class SharedProfileImageLikeController extends AppBaseController
             {
                 $sharedProfileImageLike = $this->sharedProfileImageLikeRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileImageLike -> status, 'status' => 'active', 'type' => 'p_i_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileImageLike -> status, 'status' => 'active', 'type' => 's_p_i_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Image Like updated successfully.');
                 return redirect(route('sharedProfileImageLikes.index'));
@@ -224,7 +224,7 @@ class SharedProfileImageLikeController extends AppBaseController
             {
                 $this->sharedProfileImageLikeRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileImageLike -> status, 'status' => 'active', 'type' => 'p_i_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileImageLike -> status, 'status' => 'active', 'type' => 's_p_i_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileImageLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Image Like deleted successfully.');
                 return redirect(route('sharedProfileImageLikes.index'));

@@ -83,7 +83,7 @@ class SharedProfileFileController extends AppBaseController
             $size = $request->file('file')->getClientSize();
     
             DB::table('shared_profile_file')->where('id', $sharedProfileFile->id)->update(['file_type' => $fileType, 'file_size' => $size]);
-            DB::table('recent_activities')->insert(['name' => $sharedProfileFile -> name, 'status' => 'active', 'type' => 'p_f_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileFile -> id, 'created_at' => $now]);
+            DB::table('recent_activities')->insert(['name' => $sharedProfileFile -> name, 'status' => 'active', 'type' => 's_p_f_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileFile -> id, 'created_at' => $now]);
             
             Flash::success('Shared Profile File saved successfully.');
             return redirect(route('sharedProfileFiles.show', [$sharedProfileFile -> id]));
@@ -257,7 +257,7 @@ class SharedProfileFileController extends AppBaseController
             if($user_id == $user[0] -> id)
             {
                 $sharedProfileFile = $this->sharedProfileFileRepository->update($request->all(), $id);
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFile -> name, 'status' => 'active', 'type' => 'p_f_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFile -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFile -> name, 'status' => 'active', 'type' => 's_p_f_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFile -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File updated successfully.');
                 return redirect(route('sharedProfileFiles.show', [$sharedProfileFile -> id]));
@@ -295,7 +295,7 @@ class SharedProfileFileController extends AppBaseController
             {
                 $this->sharedProfileFileRepository->delete($id);
                 
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFile -> name, 'status' => 'active', 'type' => 'p_f_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFile -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFile -> name, 'status' => 'active', 'type' => 's_p_f_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFile -> id, 'created_at' => $now]);
             
                 Flash::success('Shared Profile File deleted successfully.');
                 return redirect(route('sharedProfile.index'));

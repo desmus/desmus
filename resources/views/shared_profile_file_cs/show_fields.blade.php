@@ -1,44 +1,44 @@
 <div class="form-group">
   {!! Form::label('id', 'Id:') !!}
-  <p>{!! $sharedProfileFileComment->id !!}</p>
+  <p>{!! $sharedProfileFileC->id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('content', 'Content:') !!}
-  <p>{!! $sharedProfileFileComment->content !!}</p>
+  <p>{!! $sharedProfileFileC->content !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('status', 'Status:') !!}
-  <p>{!! $sharedProfileFileComment->status !!}</p>
+  <p>{!! $sharedProfileFileC->status !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('datetime', 'Datetime:') !!}
-  <p>{!! $sharedProfileFileComment->datetime !!}</p>
+  <p>{!! $sharedProfileFileC->datetime !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('shared_profile_file_id', 'Shared Profile File Id:') !!}
-  <p>{!! $sharedProfileFileComment->shared_profile_file_id !!}</p>
+  <p>{!! $sharedProfileFileC->shared_profile_file_id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('user_id', 'User Id:') !!}
-  <p>{!! $sharedProfileFileComment->user_id !!}</p>
+  <p>{!! $sharedProfileFileC->user_id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('deleted_at', 'Deleted At:') !!}
-  <p>{!! $sharedProfileFileComment->deleted_at !!}</p>
+  <p>{!! $sharedProfileFileC->deleted_at !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('created_at', 'Created At:') !!}
-  <p>{!! $sharedProfileFileComment->created_at !!}</p>
+  <p>{!! $sharedProfileFileC->created_at !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('updated_at', 'Updated At:') !!}
-  <p>{!! $sharedProfileFileComment->updated_at !!}</p>
+  <p>{!! $sharedProfileFileC->updated_at !!}</p>
 </div>

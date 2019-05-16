@@ -815,6 +815,12 @@
                           
                           @endif
                           
+                          @if($recent_activity -> type[0] == 's' && $recent_activity -> type[2] == 'p' && ($recent_activity -> type[4] == 'f' || $recent_activity -> type[4] == 'n' || $recent_activity -> type[4] == 'i' || $recent_activity -> type[4] == 'a' || $recent_activity -> type[4] == 'v'))
+                       
+                            <i class="glyphicon glyphicon-share-alt"></i>
+                          
+                          @endif
+                          
                           @if(isset($recent_activity -> type[6]))
                           
                             @if($recent_activity -> type[0] == 'p' && $recent_activity -> type[4] == 'c' || $recent_activity -> type[6] == 'r' && ($recent_activity -> type[2] == 'f' || $recent_activity -> type[2] == 'n' || $recent_activity -> type[2] == 'i' || $recent_activity -> type[2] == 'a' || $recent_activity -> type[2] == 'v') || $recent_activity -> type == 'p_ad_c_c' || $recent_activity -> type == 'p_ad_c_r_c')
@@ -827,6 +833,22 @@
                             
                               <i class="glyphicon glyphicon-thumbs-up"></i>
                             
+                            @endif
+                            
+                            @if(isset($recent_activity -> type[8]))
+                            
+                              @if($recent_activity -> type[0] == 's' && $recent_activity -> type[2] == 'p' && $recent_activity -> type[6] == 'c' || $recent_activity -> type[8] == 'r' && ($recent_activity -> type[4] == 'f' || $recent_activity -> type[4] == 'n' || $recent_activity -> type[4] == 'i' || $recent_activity -> type[4] == 'a' || $recent_activity -> type[4] == 'v'))
+                            
+                                <i class="glyphicon glyphicon-comment"></i>
+                            
+                              @endif
+                            
+                              @if($recent_activity -> type[0] == 's' && $recent_activity -> type[2] == 'p' && $recent_activity -> type[6] == 'l' && ($recent_activity -> type[4] == 'f' || $recent_activity -> type[4] == 'n' || $recent_activity -> type[4] == 'i' || $recent_activity -> type[4] == 'a' || $recent_activity -> type[4] == 'v'))
+                            
+                                <i class="glyphicon glyphicon-thumbs-up"></i>
+                            
+                              @endif
+                          
                             @endif
                           
                           @endif
@@ -1757,6 +1779,126 @@
                               @if($recent_activity -> type == 'p_ad_l_c' || $recent_activity -> type == 'p_ad_l_u' || $recent_activity -> type == 'p_ad_l_d')
                               
                                 an advertisement <a href="{!! route('publicAdvertisementLikes.show', [$recent_activity -> entity_id]) !!}"> like </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_f_c' || $recent_activity -> type == 's_p_f_u' || $recent_activity -> type == 's_p_f_d')
+                              
+                                the file <a href="{!! route('sharedProfileFiles.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_n_c' || $recent_activity -> type == 's_p_n_u' || $recent_activity -> type == 's_p_n_d')
+                              
+                                the note <a href="{!! route('sharedProfileNotes.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_i_c' || $recent_activity -> type == 's_p_i_u' || $recent_activity -> type == 's_p_i_d')
+                              
+                                an image <a href="{!! route('sharedProfileImages.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_a_c' || $recent_activity -> type == 's_p_a_u' || $recent_activity -> type == 's_p_a_d')
+                              
+                                an audio <a href="{!! route('sharedProfileAudios.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_v_c' || $recent_activity -> type == 's_p_v_u' || $recent_activity -> type == 's_p_v_d')
+                              
+                                a video <a href="{!! route('sharedProfileVideos.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_f_c_c' || $recent_activity -> type == 's_p_f_c_u' || $recent_activity -> type == 's_p_f_c_d')
+                              
+                                a file <a href="{!! route('sharedProfileFileCs.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_n_c_c' || $recent_activity -> type == 's_p_n_c_u' || $recent_activity -> type == 's_p_n_c_d')
+                              
+                                a note <a href="{!! route('sharedProfileNoteCs.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_i_c_c' || $recent_activity -> type == 's_p_i_c_u' || $recent_activity -> type == 's_p_i_c_d')
+                              
+                                an image <a href="{!! route('sharedProfileImageCs.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_a_c_c' || $recent_activity -> type == 's_p_a_c_u' || $recent_activity -> type == 's_p_a_c_d')
+                              
+                                an audio <a href="{!! route('sharedProfileAudioCs.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_v_c_c' || $recent_activity -> type == 's_p_v_c_u' || $recent_activity -> type == 's_p_v_c_d')
+                              
+                                a video <a href="{!! route('sharedProfileVideoCs.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_f_c_r_c' || $recent_activity -> type == 's_p_f_c_r_u' || $recent_activity -> type == 's_p_f_c_r_d')
+                              
+                                a file <a href="{!! route('sharedProfileFileCResponses.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_n_c_r_c' || $recent_activity -> type == 's_p_n_c_r_u' || $recent_activity -> type == 's_p_n_c_r_d')
+                              
+                                a note <a href="{!! route('sharedProfileNoteCResponses.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_i_c_r_c' || $recent_activity -> type == 's_p_i_c_r_u' || $recent_activity -> type == 's_p_i_c_r_d')
+                              
+                                an image <a href="{!! route('sharedProfileImageCResponses.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_a_c_r_c' || $recent_activity -> type == 's_p_a_c_r_u' || $recent_activity -> type == 's_p_a_c_r_d')
+                              
+                                an audio <a href="{!! route('sharedProfileAudioCResponses.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_v_c_r_c' || $recent_activity -> type == 's_p_v_c_r_u' || $recent_activity -> type == 's_p_v_c_r_d')
+                              
+                                a video <a href="{!! route('sharedProfileVideoCResponses.show', [$recent_activity -> entity_id]) !!}"> comment </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_f_l_c' || $recent_activity -> type == 's_p_f_l_u' || $recent_activity -> type == 's_p_f_l_d')
+                              
+                                a file <a href="{!! route('sharedProfileFileLikes.show', [$recent_activity -> entity_id]) !!}"> like </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_n_l_c' || $recent_activity -> type == 's_p_n_l_u' || $recent_activity -> type == 's_p_n_l_d')
+                              
+                                a note <a href="{!! route('sharedProfileNoteLikes.show', [$recent_activity -> entity_id]) !!}"> like </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_i_l_c' || $recent_activity -> type == 's_p_i_l_u' || $recent_activity -> type == 's_p_i_l_d')
+                              
+                                an image <a href="{!! route('sharedProfileImageLikes.show', [$recent_activity -> entity_id]) !!}"> like </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_a_l_c' || $recent_activity -> type == 's_p_a_l_u' || $recent_activity -> type == 's_p_a_l_d')
+                              
+                                an audio <a href="{!! route('sharedProfileAudioLikes.show', [$recent_activity -> entity_id]) !!}"> like </a>
+                                
+                              @endif
+                              
+                              @if($recent_activity -> type == 's_p_v_l_c' || $recent_activity -> type == 's_p_v_l_u' || $recent_activity -> type == 's_p_v_l_d')
+                              
+                                a video <a href="{!! route('sharedProfileVideoLikes.show', [$recent_activity -> entity_id]) !!}"> like </a>
                                 
                               @endif
                             

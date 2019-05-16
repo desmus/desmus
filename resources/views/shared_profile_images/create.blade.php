@@ -52,7 +52,7 @@
     
   <section class="content-header">
         
-    <h1> Public Image </h1>
+    <h1> Shared Profile Image </h1>
     
   </section>
     
@@ -146,7 +146,7 @@
     
       <div class="tab-pane active" id="shared-profile-file">
         
-        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Public Files </h3>
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Shared Profile Files </h3>
         
         <ul class="control-sidebar-menu">
           
@@ -177,7 +177,7 @@
       
       <div id="shared-profile-note" class="tab-pane">
         
-        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Public Notes </h3>
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Shared Profile Notes </h3>
         
         <ul class="control-sidebar-menu">
           
@@ -208,7 +208,7 @@
 
       <div class="tab-pane" id="shared-profile-image">
     
-        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Public Images </h3>
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Shared Profile Images </h3>
         
         <ul class="control-sidebar-menu">
           
@@ -239,7 +239,7 @@
       
       <div class="tab-pane" id="shared-profile-audio">
     
-        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Public Audios </h3>
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Shared Profile Audios </h3>
         
         <ul class="control-sidebar-menu">
           
@@ -270,7 +270,7 @@
       
       <div class="tab-pane" id="shared-profile-video">
     
-        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Public Videos </h3>
+        <h3 class="control-sidebar-heading" style="margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.3);"> Shared Profile Videos </h3>
         
         <ul class="control-sidebar-menu">
           

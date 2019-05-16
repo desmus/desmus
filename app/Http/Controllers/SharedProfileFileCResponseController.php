@@ -80,7 +80,7 @@ class SharedProfileFileCResponseController extends AppBaseController
                 $input = $request->all();
                 $sharedProfileFileCResponse = $this->sharedProfileFileCResponseRepository->create($input);
                 
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileCResponse -> status, 'status' => 'active', 'type' => 'p_f_c_r_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileCResponse -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileCResponse -> status, 'status' => 'active', 'type' => 's_p_f_c_r_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileCResponse -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File C Response saved successfully.');
                 return redirect(route('sharedProfile.index'));
@@ -178,7 +178,7 @@ class SharedProfileFileCResponseController extends AppBaseController
             {
                 $sharedProfileFileCResponse = $this->sharedProfileFileCResponseRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileCResponse -> status, 'status' => 'active', 'type' => 'p_f_c_r_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileCResponse -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileCResponse -> status, 'status' => 'active', 'type' => 's_p_f_c_r_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileCResponse -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File C Response updated successfully.');
                 return redirect(route('sharedProfileFileCResponses.index'));
@@ -214,7 +214,7 @@ class SharedProfileFileCResponseController extends AppBaseController
             {
                 $this->sharedProfileFileCResponseRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileCResponse -> status, 'status' => 'active', 'type' => 'p_f_c_r_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileCResponse -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileCResponse -> status, 'status' => 'active', 'type' => 's_p_f_c_r_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileCResponse -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File C Response deleted successfully.');
                 return redirect(route('sharedProfileFileCResponses.index'));

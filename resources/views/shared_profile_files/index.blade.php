@@ -4,7 +4,7 @@
     
   <section class="content-header">
         
-    <h1 class="pull-left">Public Files</h1>
+    <h1 class="pull-left">Shared Profile Files</h1>
   
   </section>
     

@@ -84,7 +84,7 @@ class SharedProfileFileLikeController extends AppBaseController
                 {
                     $sharedProfileFileLike = $this->sharedProfileFileLikeRepository->create($input);
         
-                    DB::table('recent_activities')->insert(['name' => $sharedProfileFileLike -> status, 'status' => 'active', 'type' => 'p_f_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileLike -> id, 'created_at' => $now]);
+                    DB::table('recent_activities')->insert(['name' => $sharedProfileFileLike -> status, 'status' => 'active', 'type' => 's_p_f_l_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileLike -> id, 'created_at' => $now]);
         
                     Flash::success('Shared Profile File Like saved successfully.');
                     return redirect(route('sharedProfile.index'));
@@ -188,7 +188,7 @@ class SharedProfileFileLikeController extends AppBaseController
             {
                 $sharedProfileFileLike = $this->sharedProfileFileLikeRepository->update($request->all(), $id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileLike -> status, 'status' => 'active', 'type' => 'p_f_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileLike -> status, 'status' => 'active', 'type' => 's_p_f_l_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File Like updated successfully.');
                 return redirect(route('sharedProfileFileLikes.index'));
@@ -224,7 +224,7 @@ class SharedProfileFileLikeController extends AppBaseController
             {
                 $this->sharedProfileFileLikeRepository->delete($id);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileFileLike -> status, 'status' => 'active', 'type' => 'p_f_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileLike -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileFileLike -> status, 'status' => 'active', 'type' => 's_p_f_l_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileFileLike -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile File Like deleted successfully.');
                 return redirect(route('sharedProfileFileLikes.index'));

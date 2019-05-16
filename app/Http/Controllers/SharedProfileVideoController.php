@@ -84,7 +84,7 @@ class SharedProfileVideoController extends AppBaseController
             $size = $request->file('file')->getClientSize();
     
             DB::table('shared_profile_video')->where('id', $sharedProfileVideo->id)->update(['file_type' => $fileType, 'file_size' => $size]);
-            DB::table('recent_activities')->insert(['name' => $sharedProfileVideo -> name, 'status' => 'active', 'type' => 'p_v_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideo -> id, 'created_at' => $now]);
+            DB::table('recent_activities')->insert(['name' => $sharedProfileVideo -> name, 'status' => 'active', 'type' => 's_p_v_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideo -> id, 'created_at' => $now]);
     
             Flash::success('Shared Profile Video saved successfully.');
             return redirect(route('sharedProfileVideos.show', [$sharedProfileVideo -> id]));
@@ -259,7 +259,7 @@ class SharedProfileVideoController extends AppBaseController
             {
                 $sharedProfileVideo = $this->sharedProfileVideoRepository->update($request->all(), $id);
             
-                DB::table('recent_activities')->insert(['name' => $sharedProfileVideo -> name, 'status' => 'active', 'type' => 'p_v_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideo -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileVideo -> name, 'status' => 'active', 'type' => 's_p_v_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideo -> id, 'created_at' => $now]);
     
                 Flash::success('Shared Profile Video updated successfully.');
                 return redirect(route('sharedProfileVideos.show', [$sharedProfileVideo -> id]));
@@ -297,7 +297,7 @@ class SharedProfileVideoController extends AppBaseController
             {
                 $this->sharedProfileVideoRepository->delete($id);
                 
-                DB::table('recent_activities')->insert(['name' => $sharedProfileVideo -> name, 'status' => 'active', 'type' => 'p_v_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideo -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileVideo -> name, 'status' => 'active', 'type' => 's_p_v_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileVideo -> id, 'created_at' => $now]);
             
                 Flash::success('Shared Profile Video deleted successfully.');
                 return redirect(route('sharedProfile.index'));

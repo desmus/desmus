@@ -80,7 +80,7 @@ class SharedProfileNoteCController extends AppBaseController
                 $input = $request->all();
                 $sharedProfileNoteC = $this->sharedProfileNoteCRepository->create($input);
         
-                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteC -> status, 'status' => 'active', 'type' => 'p_n_c_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteC -> status, 'status' => 'active', 'type' => 's_p_n_c_c', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteC -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Note C saved successfully.');
                 return redirect(route('sharedProfile.index'));
@@ -177,7 +177,7 @@ class SharedProfileNoteCController extends AppBaseController
             if($user_id == $sharedProfileNoteC -> user_id)
             {
                 $sharedProfileNoteC = $this->sharedProfileNoteCRepository->update($request->all(), $id);
-                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteC -> status, 'status' => 'active', 'type' => 'p_n_c_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteC -> status, 'status' => 'active', 'type' => 's_p_n_c_u', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteC -> id, 'created_at' => $now]);
     
                 Flash::success('Shared Profile Note C updated successfully.');
                 return redirect(route('sharedProfileNoteCs.index'));
@@ -212,7 +212,7 @@ class SharedProfileNoteCController extends AppBaseController
             if($user_id == $sharedProfileNoteC -> user_id)
             {
                 $this->sharedProfileNoteCRepository->delete($id);
-                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteC -> status, 'status' => 'active', 'type' => 'p_n_c_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteC -> id, 'created_at' => $now]);
+                DB::table('recent_activities')->insert(['name' => $sharedProfileNoteC -> status, 'status' => 'active', 'type' => 's_p_n_c_d', 'user_id' => $user_id, 'entity_id' => $sharedProfileNoteC -> id, 'created_at' => $now]);
         
                 Flash::success('Shared Profile Note C deleted successfully.');
                 return redirect(route('sharedProfileNoteCs.index'));
