@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileAudioCommentResponses as $sharedProfileAudioCommentResponse)
+    @foreach($sharedProfileAudioCResponses as $sharedProfileAudioCResponse)
         
       <tr>
             
-        <td>{!! $sharedProfileAudioCommentResponse->content !!}</td>
-        <td>{!! $sharedProfileAudioCommentResponse->status !!}</td>
-        <td>{!! $sharedProfileAudioCommentResponse->datetime !!}</td>
-        <td>{!! $sharedProfileAudioCommentResponse->shared_profile_audio_comment_id !!}</td>
-        <td>{!! $sharedProfileAudioCommentResponse->user_id !!}</td>
+        <td>{!! $sharedProfileAudioCResponse->content !!}</td>
+        <td>{!! $sharedProfileAudioCResponse->status !!}</td>
+        <td>{!! $sharedProfileAudioCResponse->datetime !!}</td>
+        <td>{!! $sharedProfileAudioCResponse->shared_profile_audio_comment_id !!}</td>
+        <td>{!! $sharedProfileAudioCResponse->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileAudioCommentResponses.destroy', $sharedProfileAudioCommentResponse->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileAudioCResponses.destroy', $sharedProfileAudioCResponse->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileAudioCommentResponses.show', [$sharedProfileAudioCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileAudioCommentResponses.edit', [$sharedProfileAudioCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileAudioCResponses.show', [$sharedProfileAudioCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileAudioCResponses.edit', [$sharedProfileAudioCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
             
             </div>

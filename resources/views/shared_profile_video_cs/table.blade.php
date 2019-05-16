@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileVideoComments as $sharedProfileVideoComment)
+    @foreach($sharedProfileVideoCs as $sharedProfileVideoC)
         
       <tr>
             
-        <td>{!! $sharedProfileVideoComment->content !!}</td>
-        <td>{!! $sharedProfileVideoComment->status !!}</td>
-        <td>{!! $sharedProfileVideoComment->datetime !!}</td>
-        <td>{!! $sharedProfileVideoComment->shared_profile_video_id !!}</td>
-        <td>{!! $sharedProfileVideoComment->user_id !!}</td>
+        <td>{!! $sharedProfileVideoC->content !!}</td>
+        <td>{!! $sharedProfileVideoC->status !!}</td>
+        <td>{!! $sharedProfileVideoC->datetime !!}</td>
+        <td>{!! $sharedProfileVideoC->shared_profile_video_id !!}</td>
+        <td>{!! $sharedProfileVideoC->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileVideoComments.destroy', $sharedProfileVideoComment->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileVideoCs.destroy', $sharedProfileVideoC->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileVideoComments.show', [$sharedProfileVideoComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileVideoComments.edit', [$sharedProfileVideoComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileVideoCs.show', [$sharedProfileVideoC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileVideoCs.edit', [$sharedProfileVideoC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 

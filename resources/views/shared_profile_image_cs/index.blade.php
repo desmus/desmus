@@ -6,7 +6,7 @@
         
     <h1 class="pull-left">Public Image Comments</h1>
         
-    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileImageComments.create') !!}">Add New</a> </h1>
+    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileImageCs.create') !!}">Add New</a> </h1>
     
   </section>
     
@@ -22,7 +22,7 @@
             
       <div class="box-body">
                     
-        @include('shared_profile_image_comments.table')
+        @include('shared_profile_image_cs.table')
             
       </div>
         

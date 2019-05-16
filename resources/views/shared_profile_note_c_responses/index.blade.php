@@ -6,7 +6,7 @@
         
     <h1 class="pull-left">Public Note Comment Responses</h1>
         
-    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileNoteCommentResponses.create') !!}">Add New</a> </h1>
+    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileNoteCResponses.create') !!}">Add New</a> </h1>
     
   </section>
     
@@ -22,7 +22,7 @@
             
       <div class="box-body">
                     
-        @include('shared_profile_note_comment_responses.table')
+        @include('shared_profile_note_c_responses.table')
             
       </div>
         

@@ -31,7 +31,7 @@ class SharedProfileImageCResponseController extends AppBaseController
             $this->sharedProfileImageCResponseRepository->pushCriteria(new RequestCriteria($request));
             $sharedProfileImageCResponses = $this->sharedProfileImageCResponseRepository->all();
     
-            return view('shared_profile_image_comment_responses.index')
+            return view('shared_profile_image_c_responses.index')
                 ->with('sharedProfileImageCResponses', $sharedProfileImageCResponses);
         }
         
@@ -47,7 +47,7 @@ class SharedProfileImageCResponseController extends AppBaseController
         
         if(Auth::user() != null)
         {
-            return view('shared_profile_image_comment_responses.create');
+            return view('shared_profile_image_c_responses.create');
         }
         
         else
@@ -114,7 +114,7 @@ class SharedProfileImageCResponseController extends AppBaseController
     
             if($user_id == $sharedProfileImageCResponse -> user_id)
             {
-                return view('shared_profile_image_comment_responses.show')->with('sharedProfileImageCResponse', $sharedProfileImageCResponse);
+                return view('shared_profile_image_c_responses.show')->with('sharedProfileImageCResponse', $sharedProfileImageCResponse);
             }
             
             else
@@ -145,7 +145,7 @@ class SharedProfileImageCResponseController extends AppBaseController
     
             if($user_id == $sharedProfileImageCResponse -> user_id)
             {
-                return view('shared_profile_image_comment_responses.edit')->with('sharedProfileImageCResponse', $sharedProfileImageCResponse);
+                return view('shared_profile_image_c_responses.edit')->with('sharedProfileImageCResponse', $sharedProfileImageCResponse);
             }
             
             else

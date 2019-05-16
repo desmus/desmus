@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileNoteComments as $sharedProfileNoteComment)
+    @foreach($sharedProfileNoteCs as $sharedProfileNoteC)
         
       <tr>
             
-        <td>{!! $sharedProfileNoteComment->content !!}</td>
-        <td>{!! $sharedProfileNoteComment->status !!}</td>
-        <td>{!! $sharedProfileNoteComment->datetime !!}</td>
-        <td>{!! $sharedProfileNoteComment->shared_profile_note_id !!}</td>
-        <td>{!! $sharedProfileNoteComment->user_id !!}</td>
+        <td>{!! $sharedProfileNoteC->content !!}</td>
+        <td>{!! $sharedProfileNoteC->status !!}</td>
+        <td>{!! $sharedProfileNoteC->datetime !!}</td>
+        <td>{!! $sharedProfileNoteC->shared_profile_note_id !!}</td>
+        <td>{!! $sharedProfileNoteC->user_id !!}</td>
             
         <td>
           
-          {!! Form::open(['route' => ['sharedProfileNoteComments.destroy', $sharedProfileNoteComment->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileNoteCs.destroy', $sharedProfileNoteC->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileNoteComments.show', [$sharedProfileNoteComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileNoteComments.edit', [$sharedProfileNoteComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileNoteCs.show', [$sharedProfileNoteC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileNoteCs.edit', [$sharedProfileNoteC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 
             </div>

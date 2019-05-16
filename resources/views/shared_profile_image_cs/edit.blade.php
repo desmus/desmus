@@ -18,9 +18,9 @@
                
         <div class="row">
                    
-          {!! Form::model($sharedProfileImageComment, ['route' => ['sharedProfileImageComments.update', $sharedProfileImageComment->id], 'method' => 'patch']) !!}
+          {!! Form::model($sharedProfileImageC, ['route' => ['sharedProfileImageCs.update', $sharedProfileImageC->id], 'method' => 'patch']) !!}
 
-            @include('shared_profile_image_comments.fields')
+            @include('shared_profile_image_cs.fields')
 
           {!! Form::close() !!}
                

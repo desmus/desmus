@@ -6,7 +6,7 @@
         
     <h1 class="pull-left">Public Audio Comments</h1>
         
-    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileAudioComments.create') !!}">Add New</a> </h1>
+    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileAudioCs.create') !!}">Add New</a> </h1>
     
   </section>
     
@@ -22,7 +22,7 @@
             
       <div class="box-body">
                     
-        @include('shared_profile_audio_comments.table')
+        @include('shared_profile_audio_cs.table')
             
       </div>
         

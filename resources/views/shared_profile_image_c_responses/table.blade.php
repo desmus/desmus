@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileImageCommentResponses as $sharedProfileImageCommentResponse)
+    @foreach($sharedProfileImageCResponses as $sharedProfileImageCResponse)
         
       <tr>
             
-        <td>{!! $sharedProfileImageCommentResponse->content !!}</td>
-        <td>{!! $sharedProfileImageCommentResponse->status !!}</td>
-        <td>{!! $sharedProfileImageCommentResponse->datetime !!}</td>
-        <td>{!! $sharedProfileImageCommentResponse->shared_profile_image_comment_id !!}</td>
-        <td>{!! $sharedProfileImageCommentResponse->user_id !!}</td>
+        <td>{!! $sharedProfileImageCResponse->content !!}</td>
+        <td>{!! $sharedProfileImageCResponse->status !!}</td>
+        <td>{!! $sharedProfileImageCResponse->datetime !!}</td>
+        <td>{!! $sharedProfileImageCResponse->shared_profile_image_comment_id !!}</td>
+        <td>{!! $sharedProfileImageCResponse->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileImageCommentResponses.destroy', $sharedProfileImageCommentResponse->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileImageCResponses.destroy', $sharedProfileImageCResponse->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileImageCommentResponses.show', [$sharedProfileImageCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileImageCommentResponses.edit', [$sharedProfileImageCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileImageCResponses.show', [$sharedProfileImageCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileImageCResponses.edit', [$sharedProfileImageCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 
             </div>

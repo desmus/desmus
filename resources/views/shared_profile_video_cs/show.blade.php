@@ -16,8 +16,8 @@
                 
         <div class="row" style="padding-left: 20px">
                     
-          @include('shared_profile_video_comments.show_fields')
-          <a href="{!! route('sharedProfileVideoComments.index') !!}" class="btn btn-default">Back</a>
+          @include('shared_profile_video_cs.show_fields')
+          <a href="{!! route('sharedProfileVideoCs.index') !!}" class="btn btn-default">Back</a>
                 
         </div>
             

@@ -16,8 +16,8 @@
                 
         <div class="row" style="padding-left: 20px">
                     
-          @include('shared_profile_audio_comments.show_fields')
-          <a href="{!! route('sharedProfileAudioComments.index') !!}" class="btn btn-default">Back</a>
+          @include('shared_profile_audio_cs.show_fields')
+          <a href="{!! route('sharedProfileAudioCs.index') !!}" class="btn btn-default">Back</a>
                 
         </div>
             

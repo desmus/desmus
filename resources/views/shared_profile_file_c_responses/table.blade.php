@@ -1,4 +1,4 @@
-<table class="table table-responsive" id="sharedProfileFileCommentResponses-table">
+<table class="table table-responsive" id="sharedProfileFileCResponses-table">
     
   <thead>
         
@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileFileCommentResponses as $sharedProfileFileCommentResponse)
+    @foreach($sharedProfileFileCResponses as $sharedProfileFileCResponse)
         
       <tr>
             
-        <td>{!! $sharedProfileFileCommentResponse->content !!}</td>
-        <td>{!! $sharedProfileFileCommentResponse->status !!}</td>
-        <td>{!! $sharedProfileFileCommentResponse->datetime !!}</td>
-        <td>{!! $sharedProfileFileCommentResponse->shared_profile_file_comment_id !!}</td>
-        <td>{!! $sharedProfileFileCommentResponse->user_id !!}</td>
+        <td>{!! $sharedProfileFileCResponse->content !!}</td>
+        <td>{!! $sharedProfileFileCResponse->status !!}</td>
+        <td>{!! $sharedProfileFileCResponse->datetime !!}</td>
+        <td>{!! $sharedProfileFileCResponse->shared_profile_file_comment_id !!}</td>
+        <td>{!! $sharedProfileFileCResponse->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileFileCommentResponses.destroy', $sharedProfileFileCommentResponse->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileFileCResponses.destroy', $sharedProfileFileCResponse->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileFileCommentResponses.show', [$sharedProfileFileCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileFileCommentResponses.edit', [$sharedProfileFileCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileFileCResponses.show', [$sharedProfileFileCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileFileCResponses.edit', [$sharedProfileFileCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 
             </div>

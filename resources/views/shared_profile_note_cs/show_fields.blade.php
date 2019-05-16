@@ -1,44 +1,44 @@
 <div class="form-group">
   {!! Form::label('id', 'Id:') !!}
-  <p>{!! $sharedProfileNoteComment->id !!}</p>
+  <p>{!! $sharedProfileNoteC->id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('content', 'Content:') !!}
-  <p>{!! $sharedProfileNoteComment->content !!}</p>
+  <p>{!! $sharedProfileNoteC->content !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('status', 'Status:') !!}
-  <p>{!! $sharedProfileNoteComment->status !!}</p>
+  <p>{!! $sharedProfileNoteC->status !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('datetime', 'Datetime:') !!}
-  <p>{!! $sharedProfileNoteComment->datetime !!}</p>
+  <p>{!! $sharedProfileNoteC->datetime !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('shared_profile_note_id', 'Shared Profile Note Id:') !!}
-  <p>{!! $sharedProfileNoteComment->shared_profile_note_id !!}</p>
+  <p>{!! $sharedProfileNoteC->shared_profile_note_id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('user_id', 'User Id:') !!}
-  <p>{!! $sharedProfileNoteComment->user_id !!}</p>
+  <p>{!! $sharedProfileNoteC->user_id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('deleted_at', 'Deleted At:') !!}
-  <p>{!! $sharedProfileNoteComment->deleted_at !!}</p>
+  <p>{!! $sharedProfileNoteC->deleted_at !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('created_at', 'Created At:') !!}
-  <p>{!! $sharedProfileNoteComment->created_at !!}</p>
+  <p>{!! $sharedProfileNoteC->created_at !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('updated_at', 'Updated At:') !!}
-  <p>{!! $sharedProfileNoteComment->updated_at !!}</p>
+  <p>{!! $sharedProfileNoteC->updated_at !!}</p>
 </div>

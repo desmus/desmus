@@ -16,8 +16,8 @@
                 
         <div class="row" style="padding-left: 20px">
                     
-          @include('shared_profile_note_comments.show_fields')
-          <a href="{!! route('sharedProfileNoteComments.index') !!}" class="btn btn-default">Back</a>
+          @include('shared_profile_note_cs.show_fields')
+          <a href="{!! route('sharedProfileNoteCs.index') !!}" class="btn btn-default">Back</a>
                 
         </div>
             

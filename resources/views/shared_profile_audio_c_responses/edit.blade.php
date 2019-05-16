@@ -18,9 +18,9 @@
                
         <div class="row">
                    
-          {!! Form::model($sharedProfileAudioCommentResponse, ['route' => ['sharedProfileAudioCommentResponses.update', $sharedProfileAudioCommentResponse->id], 'method' => 'patch']) !!}
+          {!! Form::model($sharedProfileAudioCResponse, ['route' => ['sharedProfileAudioCResponses.update', $sharedProfileAudioCResponse->id], 'method' => 'patch']) !!}
 
-            @include('shared_profile_audio_comment_responses.fields')
+            @include('shared_profile_audio_c_responses.fields')
 
           {!! Form::close() !!}
                

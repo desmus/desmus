@@ -18,9 +18,9 @@
                
         <div class="row">
                    
-          {!! Form::model($sharedProfileVideoCommentResponse, ['route' => ['sharedProfileVideoCommentResponses.update', $sharedProfileVideoCommentResponse->id], 'method' => 'patch']) !!}
+          {!! Form::model($sharedProfileVideoCResponse, ['route' => ['sharedProfileVideoCResponses.update', $sharedProfileVideoCResponse->id], 'method' => 'patch']) !!}
 
-            @include('shared_profile_video_comment_responses.fields')
+            @include('shared_profile_video_c_responses.fields')
 
           {!! Form::close() !!}
                

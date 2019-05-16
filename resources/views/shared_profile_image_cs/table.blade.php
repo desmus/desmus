@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileImageComments as $sharedProfileImageComment)
+    @foreach($sharedProfileImageCs as $sharedProfileImageC)
         
       <tr>
             
-        <td>{!! $sharedProfileImageComment->content !!}</td>
-        <td>{!! $sharedProfileImageComment->status !!}</td>
-        <td>{!! $sharedProfileImageComment->datetime !!}</td>
-        <td>{!! $sharedProfileImageComment->shared_profile_image_id !!}</td>
-        <td>{!! $sharedProfileImageComment->user_id !!}</td>
+        <td>{!! $sharedProfileImageC->content !!}</td>
+        <td>{!! $sharedProfileImageC->status !!}</td>
+        <td>{!! $sharedProfileImageC->datetime !!}</td>
+        <td>{!! $sharedProfileImageC->shared_profile_image_id !!}</td>
+        <td>{!! $sharedProfileImageC->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileImageComments.destroy', $sharedProfileImageComment->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileImageCs.destroy', $sharedProfileImageC->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileImageComments.show', [$sharedProfileImageComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileImageComments.edit', [$sharedProfileImageComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileImageCs.show', [$sharedProfileImageC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileImageCs.edit', [$sharedProfileImageC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 
             </div>

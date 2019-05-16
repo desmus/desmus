@@ -17,24 +17,24 @@
     
   <tbody>
   
-    @foreach($sharedProfileNoteCommentResponses as $sharedProfileNoteCommentResponse)
+    @foreach($sharedProfileNoteCResponses as $sharedProfileNoteCResponse)
         
       <tr>
             
-        <td>{!! $sharedProfileNoteCommentResponse->content !!}</td>
-        <td>{!! $sharedProfileNoteCommentResponse->status !!}</td>
-        <td>{!! $sharedProfileNoteCommentResponse->datetime !!}</td>
-        <td>{!! $sharedProfileNoteCommentResponse->shared_profile_note_comment_id !!}</td>
-        <td>{!! $sharedProfileNoteCommentResponse->user_id !!}</td>
+        <td>{!! $sharedProfileNoteCResponse->content !!}</td>
+        <td>{!! $sharedProfileNoteCResponse->status !!}</td>
+        <td>{!! $sharedProfileNoteCResponse->datetime !!}</td>
+        <td>{!! $sharedProfileNoteCResponse->shared_profile_note_comment_id !!}</td>
+        <td>{!! $sharedProfileNoteCResponse->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileNoteCommentResponses.destroy', $sharedProfileNoteCommentResponse->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileNoteCResponses.destroy', $sharedProfileNoteCResponse->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileNoteCommentResponses.show', [$sharedProfileNoteCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileNoteCommentResponses.edit', [$sharedProfileNoteCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileNoteCResponses.show', [$sharedProfileNoteCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileNoteCResponses.edit', [$sharedProfileNoteCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 
             </div>

@@ -31,7 +31,7 @@ class SharedProfileVideoCController extends AppBaseController
             $this->sharedProfileVideoCRepository->pushCriteria(new RequestCriteria($request));
             $sharedProfileVideoCs = $this->sharedProfileVideoCRepository->all();
     
-            return view('shared_profile_video_comments.index')
+            return view('shared_profile_video_cs.index')
                 ->with('sharedProfileVideoCs', $sharedProfileVideoCs);
         }
         
@@ -47,7 +47,7 @@ class SharedProfileVideoCController extends AppBaseController
         
         if(Auth::user() != null)
         {
-            return view('shared_profile_video_comments.create');
+            return view('shared_profile_video_cs.create');
         }
         
         else
@@ -114,7 +114,7 @@ class SharedProfileVideoCController extends AppBaseController
     
             if($user_id == $sharedProfileVideoC -> user_id)
             {
-                return view('shared_profile_video_comments.show')->with('sharedProfileVideoC', $sharedProfileVideoC);
+                return view('shared_profile_video_cs.show')->with('sharedProfileVideoC', $sharedProfileVideoC);
             }
             
             else
@@ -145,7 +145,7 @@ class SharedProfileVideoCController extends AppBaseController
     
             if($user_id == $sharedProfileVideoC -> user_id)
             {
-                return view('shared_profile_video_comments.edit')->with('sharedProfileVideoC', $sharedProfileVideoC);
+                return view('shared_profile_video_cs.edit')->with('sharedProfileVideoC', $sharedProfileVideoC);
             }
             
             else

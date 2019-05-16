@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileVideoCommentResponses as $sharedProfileVideoCommentResponse)
+    @foreach($sharedProfileVideoCResponses as $sharedProfileVideoCResponse)
         
       <tr>
             
-        <td>{!! $sharedProfileVideoCommentResponse->content !!}</td>
-        <td>{!! $sharedProfileVideoCommentResponse->status !!}</td>
-        <td>{!! $sharedProfileVideoCommentResponse->datetime !!}</td>
-        <td>{!! $sharedProfileVideoCommentResponse->shared_profile_video_comment_id !!}</td>
-        <td>{!! $sharedProfileVideoCommentResponse->user_id !!}</td>
+        <td>{!! $sharedProfileVideoCResponse->content !!}</td>
+        <td>{!! $sharedProfileVideoCResponse->status !!}</td>
+        <td>{!! $sharedProfileVideoCResponse->datetime !!}</td>
+        <td>{!! $sharedProfileVideoCResponse->shared_profile_video_comment_id !!}</td>
+        <td>{!! $sharedProfileVideoCResponse->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileVideoCommentResponses.destroy', $sharedProfileVideoCommentResponse->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileVideoCResponses.destroy', $sharedProfileVideoCResponse->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileVideoCommentResponses.show', [$sharedProfileVideoCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileVideoCommentResponses.edit', [$sharedProfileVideoCommentResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileVideoCResponses.show', [$sharedProfileVideoCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileVideoCResponses.edit', [$sharedProfileVideoCResponse->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 

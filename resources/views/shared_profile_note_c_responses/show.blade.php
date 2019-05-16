@@ -16,8 +16,8 @@
                 
         <div class="row" style="padding-left: 20px">
                     
-          @include('shared_profile_note_comment_responses.show_fields')
-          <a href="{!! route('sharedProfileNoteCommentResponses.index') !!}" class="btn btn-default">Back</a>
+          @include('shared_profile_note_c_responses.show_fields')
+          <a href="{!! route('sharedProfileNoteCResponses.index') !!}" class="btn btn-default">Back</a>
                 
         </div>
             

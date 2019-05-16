@@ -31,7 +31,7 @@ class SharedProfileNoteCResponseController extends AppBaseController
             $this->sharedProfileNoteCResponseRepository->pushCriteria(new RequestCriteria($request));
             $sharedProfileNoteCResponses = $this->sharedProfileNoteCResponseRepository->all();
     
-            return view('shared_profile_note_comment_responses.index')
+            return view('shared_profile_note_c_responses.index')
                 ->with('sharedProfileNoteCResponses', $sharedProfileNoteCResponses);
         }
         
@@ -47,7 +47,7 @@ class SharedProfileNoteCResponseController extends AppBaseController
         
         if(Auth::user() != null)
         {
-            return view('shared_profile_note_comment_responses.create');
+            return view('shared_profile_note_c_responses.create');
         }
         
         else
@@ -114,7 +114,7 @@ class SharedProfileNoteCResponseController extends AppBaseController
     
             if($user_id == $sharedProfileNoteCResponse -> user_id)
             {
-                return view('shared_profile_note_comment_responses.show')->with('sharedProfileNoteCResponse', $sharedProfileNoteCResponse);
+                return view('shared_profile_note_c_responses.show')->with('sharedProfileNoteCResponse', $sharedProfileNoteCResponse);
             }
             
             else
@@ -145,7 +145,7 @@ class SharedProfileNoteCResponseController extends AppBaseController
     
             if($user_id == $sharedProfileNoteCResponse -> user_id)
             {
-                return view('shared_profile_note_comment_responses.edit')->with('sharedProfileNoteCResponse', $sharedProfileNoteCResponse);
+                return view('shared_profile_note_c_responses.edit')->with('sharedProfileNoteCResponse', $sharedProfileNoteCResponse);
             }
             
             else

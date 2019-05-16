@@ -6,7 +6,7 @@
         
     <h1 class="pull-left">Shared Profile Video Comment Responses</h1>
         
-    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileVideoCommentResponses.create') !!}">Add New</a> </h1>
+    <h1 class="pull-right"> <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sharedProfileVideoCResponses.create') !!}">Add New</a> </h1>
     
   </section>
     
@@ -22,7 +22,7 @@
             
       <div class="box-body">
                     
-        @include('shared_profile_video_comment_responses.table')
+        @include('shared_profile_video_c_responses.table')
             
       </div>
         

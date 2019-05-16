@@ -18,9 +18,9 @@
                 
         <div class="row">
                     
-          {!! Form::open(['route' => 'sharedProfileVideoComments.store']) !!}
+          {!! Form::open(['route' => 'sharedProfileVideoCs.store']) !!}
 
-            @include('shared_profile_video_comments.fields')
+            @include('shared_profile_video_cs.fields')
 
           {!! Form::close() !!}
                 

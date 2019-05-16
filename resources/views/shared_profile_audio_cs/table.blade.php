@@ -17,24 +17,24 @@
     
   <tbody>
     
-    @foreach($sharedProfileAudioComments as $sharedProfileAudioComment)
+    @foreach($sharedProfileAudioCs as $sharedProfileAudioC)
         
       <tr>
             
-        <td>{!! $sharedProfileAudioComment->content !!}</td>
-        <td>{!! $sharedProfileAudioComment->status !!}</td>
-        <td>{!! $sharedProfileAudioComment->datetime !!}</td>
-        <td>{!! $sharedProfileAudioComment->shared_profile_audio_id !!}</td>
-        <td>{!! $sharedProfileAudioComment->user_id !!}</td>
+        <td>{!! $sharedProfileAudioC->content !!}</td>
+        <td>{!! $sharedProfileAudioC->status !!}</td>
+        <td>{!! $sharedProfileAudioC->datetime !!}</td>
+        <td>{!! $sharedProfileAudioC->shared_profile_audio_id !!}</td>
+        <td>{!! $sharedProfileAudioC->user_id !!}</td>
             
         <td>
                 
-          {!! Form::open(['route' => ['sharedProfileAudioComments.destroy', $sharedProfileAudioComment->id], 'method' => 'delete']) !!}
+          {!! Form::open(['route' => ['sharedProfileAudioCs.destroy', $sharedProfileAudioC->id], 'method' => 'delete']) !!}
                 
             <div class='btn-group'>
                     
-              <a href="{!! route('sharedProfileAudioComments.show', [$sharedProfileAudioComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-              <a href="{!! route('sharedProfileAudioComments.edit', [$sharedProfileAudioComment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+              <a href="{!! route('sharedProfileAudioCs.show', [$sharedProfileAudioC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+              <a href="{!! route('sharedProfileAudioCs.edit', [$sharedProfileAudioC->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
               
               {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 

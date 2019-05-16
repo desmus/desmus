@@ -18,9 +18,9 @@
                 
         <div class="row">
                     
-          {!! Form::open(['route' => 'sharedProfileAudioCommentResponses.store']) !!}
+          {!! Form::open(['route' => 'sharedProfileAudioCResponses.store']) !!}
 
-            @include('shared_profile_audio_comment_responses.fields')
+            @include('shared_profile_audio_c_responses.fields')
 
           {!! Form::close() !!}
                 

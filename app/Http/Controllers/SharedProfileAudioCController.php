@@ -30,7 +30,7 @@ class SharedProfileAudioCController extends AppBaseController
             $this->sharedProfileAudioCRepository->pushCriteria(new RequestCriteria($request));
             $sharedProfileAudioCs = $this->sharedProfileAudioCRepository->all();
     
-            return view('shared_profile_audio_comments.index')
+            return view('shared_profile_audio_cs.index')
                 ->with('sharedProfileAudioCs', $sharedProfileAudioCs);
         }
         
@@ -46,7 +46,7 @@ class SharedProfileAudioCController extends AppBaseController
         
         if(Auth::user() != null)
         {
-            return view('shared_profile_audio_comments.create');
+            return view('shared_profile_audio_cs.create');
         }
         
         else
@@ -113,7 +113,7 @@ class SharedProfileAudioCController extends AppBaseController
     
             if($user_id == $sharedProfileAudioC -> user_id)
             {
-                return view('shared_profile_audio_comments.show')->with('sharedProfileAudioC', $sharedProfileAudioC);
+                return view('shared_profile_audio_cs.show')->with('sharedProfileAudioC', $sharedProfileAudioC);
             }
             
             else
@@ -144,7 +144,7 @@ class SharedProfileAudioCController extends AppBaseController
     
             if($user_id == $sharedProfileAudioC -> user_id)
             {
-                return view('shared_profile_audio_comments.edit')->with('sharedProfileAudioC', $sharedProfileAudioC);
+                return view('shared_profile_audio_cs.edit')->with('sharedProfileAudioC', $sharedProfileAudioC);
             }
             
             else

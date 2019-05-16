@@ -18,9 +18,9 @@
                 
         <div class="row">
                     
-          {!! Form::open(['route' => 'sharedProfileNoteCommentResponses.store']) !!}
+          {!! Form::open(['route' => 'sharedProfileNoteCResponses.store']) !!}
 
-            @include('shared_profile_note_comment_responses.fields')
+            @include('shared_profile_note_c_responses.fields')
 
           {!! Form::close() !!}
                 

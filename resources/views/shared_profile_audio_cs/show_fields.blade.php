@@ -1,44 +1,44 @@
 <div class="form-group">
   {!! Form::label('id', 'Id:') !!}
-  <p>{!! $sharedProfileAudioComment->id !!}</p>
+  <p>{!! $sharedProfileAudioC->id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('content', 'Content:') !!}
-  <p>{!! $sharedProfileAudioComment->content !!}</p>
+  <p>{!! $sharedProfileAudioC->content !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('status', 'Status:') !!}
-  <p>{!! $sharedProfileAudioComment->status !!}</p>
+  <p>{!! $sharedProfileAudioC->status !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('datetime', 'Datetime:') !!}
-  <p>{!! $sharedProfileAudioComment->datetime !!}</p>
+  <p>{!! $sharedProfileAudioC->datetime !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('shared_profile_audio_id', 'Public Audio Id:') !!}
-  <p>{!! $sharedProfileAudioComment->shared_profile_audio_id !!}</p>
+  <p>{!! $sharedProfileAudioC->shared_profile_audio_id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('user_id', 'User Id:') !!}
-  <p>{!! $sharedProfileAudioComment->user_id !!}</p>
+  <p>{!! $sharedProfileAudioC->user_id !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('deleted_at', 'Deleted At:') !!}
-  <p>{!! $sharedProfileAudioComment->deleted_at !!}</p>
+  <p>{!! $sharedProfileAudioC->deleted_at !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('created_at', 'Created At:') !!}
-  <p>{!! $sharedProfileAudioComment->created_at !!}</p>
+  <p>{!! $sharedProfileAudioC->created_at !!}</p>
 </div>
 
 <div class="form-group">
   {!! Form::label('updated_at', 'Updated At:') !!}
-  <p>{!! $sharedProfileAudioComment->updated_at !!}</p>
+  <p>{!! $sharedProfileAudioC->updated_at !!}</p>
 </div>
