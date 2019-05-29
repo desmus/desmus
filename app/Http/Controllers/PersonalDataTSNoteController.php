@@ -65,7 +65,7 @@ class PersonalDataTSNoteController extends AppBaseController
                 $personalDataTSNoteTodolist = DB::table('colleges')->join('personal_data_topics', 'colleges.id', '=', 'personal_data_topics.personal_data_id')->join('personal_data_topic_sections', 'personal_data_topics.id', '=', 'personal_data_topic_sections.personal_data_topic_id')->join('personal_data_t_s_notes', 'personal_data_topic_sections.id', '=', 'personal_data_t_s_notes.personal_data_t_s_id')->join('personal_data_t_s_n_todolists', 'personal_data_t_s_notes.id', '=', 'personal_data_t_s_n_todolists.p_d_t_s_n_id')->where('personal_data_t_s_n_todolists.p_d_t_s_n_id', '=', $personalDataTSNote -> id)->where(function ($query) {$query->where('personal_data_t_s_n_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('personal_data_t_s_n_todolists.status', '=', 'active');})->orderBy('personal_data_t_s_n_todolists.datetime', 'desc')->limit(50)->get();
                 $personalDataTSNoteTodolistCompleted = DB::table('colleges')->join('personal_data_topics', 'colleges.id', '=', 'personal_data_topics.personal_data_id')->join('personal_data_topic_sections', 'personal_data_topics.id', '=', 'personal_data_topic_sections.personal_data_topic_id')->join('personal_data_t_s_notes', 'personal_data_topic_sections.id', '=', 'personal_data_t_s_notes.personal_data_t_s_id')->join('personal_data_t_s_n_todolists', 'personal_data_t_s_notes.id', '=', 'personal_data_t_s_n_todolists.p_d_t_s_n_id')->where('personal_data_t_s_n_todolists.p_d_t_s_n_id', '=', $personalDataTSNote -> id)->where(function ($query) {$query->where('personal_data_t_s_n_todolists.status', '=', 'finalized');})->where(function ($query) {$query->where('personal_data_t_s_n_todolists.deleted_at', '=', null);})->orderBy('personal_data_t_s_n_todolists.datetime', 'desc')->limit(50)->get();
             
-                $text = '';
+                $text = $personalDataTSNote -> content;
             
                 if($request->file('image'))
                 {
@@ -76,7 +76,7 @@ class PersonalDataTSNoteController extends AppBaseController
                     $gcvRequest = new GoogleCloudVision([$request], 'AIzaSyCiYAx75dCXDnjUNPIOzlqTp0H7Up9AQh8');
                     $response = $gcvRequest->annotate();
             
-                    $text = $response->responses[0]->fullTextAnnotation->text;
+                    $text = $text . $response->responses[0]->fullTextAnnotation->text;
                 }
                 
                 $personalDataTSNoteTodolistsList = DB::table('colleges')->join('personal_data_topics', 'colleges.id', '=', 'personal_data_topics.personal_data_id')->join('personal_data_topic_sections', 'personal_data_topics.id', '=', 'personal_data_topic_sections.personal_data_topic_id')->join('personal_data_t_s_notes', 'personal_data_topic_sections.id', '=', 'personal_data_t_s_notes.personal_data_t_s_id')->join('personal_data_t_s_n_todolists', 'personal_data_t_s_notes.id', '=', 'personal_data_t_s_n_todolists.p_d_t_s_n_id')->where('personal_data_t_s_n_todolists.p_d_t_s_n_id', '=', $personalDataTSNote -> id)->where(function ($query) {$query->where('personal_data_t_s_n_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('personal_data_t_s_n_todolists.status', '=', 'active');})->orderBy('personal_data_t_s_n_todolists.datetime', 'desc')->limit(5)->get();

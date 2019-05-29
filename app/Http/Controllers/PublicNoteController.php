@@ -77,7 +77,7 @@ class PublicNoteController extends AppBaseController
             $i += 1;
         }
                 
-        $text = '';
+        $text = $publicNote -> content;
             
         if($request->file('image'))
         {
@@ -88,7 +88,7 @@ class PublicNoteController extends AppBaseController
             $gcvRequest = new GoogleCloudVision([$request], 'AIzaSyCiYAx75dCXDnjUNPIOzlqTp0H7Up9AQh8');
             $response = $gcvRequest->annotate();
             
-            $text = $response->responses[0]->fullTextAnnotation->text;
+            $text = $text . $response->responses[0]->fullTextAnnotation->text;
         }
             
         $files_list = DB::table('public_file')->where(function ($query) {$query->where('public_file.deleted_at', '=', null);})->orderBy('name', 'desc')->limit(10)->get();

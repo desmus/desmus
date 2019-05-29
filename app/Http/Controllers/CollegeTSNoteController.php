@@ -65,7 +65,7 @@ class CollegeTSNoteController extends AppBaseController
                 $collegeTSNoteTodolist = DB::table('colleges')->join('college_topics', 'colleges.id', '=', 'college_topics.college_id')->join('college_topic_sections', 'college_topics.id', '=', 'college_topic_sections.college_topic_id')->join('college_t_s_notes', 'college_topic_sections.id', '=', 'college_t_s_notes.college_topic_section_id')->join('college_t_s_note_todolists', 'college_t_s_notes.id', '=', 'college_t_s_note_todolists.c_t_s_n_id')->where('college_t_s_note_todolists.c_t_s_n_id', '=', $collegeTSNote -> id)->where(function ($query) {$query->where('college_t_s_note_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('college_t_s_note_todolists.status', '=', 'active');})->orderBy('college_t_s_note_todolists.datetime', 'desc')->limit(50)->get();
                 $collegeTSNoteTodolistCompleted = DB::table('colleges')->join('college_topics', 'colleges.id', '=', 'college_topics.college_id')->join('college_topic_sections', 'college_topics.id', '=', 'college_topic_sections.college_topic_id')->join('college_t_s_notes', 'college_topic_sections.id', '=', 'college_t_s_notes.college_topic_section_id')->join('college_t_s_note_todolists', 'college_t_s_notes.id', '=', 'college_t_s_note_todolists.c_t_s_n_id')->where('college_t_s_note_todolists.c_t_s_n_id', '=', $collegeTSNote -> id)->where(function ($query) {$query->where('college_t_s_note_todolists.status', '=', 'finalized');})->where(function ($query) {$query->where('college_t_s_note_todolists.deleted_at', '=', null);})->orderBy('college_t_s_note_todolists.datetime', 'desc')->limit(50)->get();
             
-                $text = '';
+                $text = $collegeTSNote -> content;
             
                 if($request->file('image'))
                 {
@@ -76,7 +76,7 @@ class CollegeTSNoteController extends AppBaseController
                     $gcvRequest = new GoogleCloudVision([$request], 'AIzaSyCiYAx75dCXDnjUNPIOzlqTp0H7Up9AQh8');
                     $response = $gcvRequest->annotate();
             
-                    $text = $response->responses[0]->fullTextAnnotation->text;
+                    $text = $text . $response->responses[0]->fullTextAnnotation->text;
                 }
                 
                 $collegeTSNoteTodolistsList = DB::table('colleges')->join('college_topics', 'colleges.id', '=', 'college_topics.college_id')->join('college_topic_sections', 'college_topics.id', '=', 'college_topic_sections.college_topic_id')->join('college_t_s_notes', 'college_topic_sections.id', '=', 'college_t_s_notes.college_topic_section_id')->join('college_t_s_note_todolists', 'college_t_s_notes.id', '=', 'college_t_s_note_todolists.c_t_s_n_id')->where('college_t_s_note_todolists.c_t_s_n_id', '=', $collegeTSNote -> id)->where(function ($query) {$query->where('college_t_s_note_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('college_t_s_note_todolists.status', '=', 'active');})->orderBy('college_t_s_note_todolists.datetime', 'desc')->limit(5)->get();

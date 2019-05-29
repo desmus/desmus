@@ -821,6 +821,12 @@
                           
                           @endif
                           
+                          @if($recent_activity -> type == 'u_s_p_c')
+                          
+                            <i class="glyphicon glyphicon-share-alt"></i>
+                          
+                          @endif
+                          
                           @if(isset($recent_activity -> type[6]))
                           
                             @if($recent_activity -> type[0] == 'p' && $recent_activity -> type[4] == 'c' || $recent_activity -> type[6] == 'r' && ($recent_activity -> type[2] == 'f' || $recent_activity -> type[2] == 'n' || $recent_activity -> type[2] == 'i' || $recent_activity -> type[2] == 'a' || $recent_activity -> type[2] == 'v') || $recent_activity -> type == 'p_ad_c_c' || $recent_activity -> type == 'p_ad_c_r_c')
@@ -876,10 +882,16 @@
                                 
                               @endif
                               
-                              @if(substr($recent_activity -> type, -1) == 'c' && $recent_activity -> type[0] == 'u')
+                              @if(substr($recent_activity -> type, -1) == 'c' && $recent_activity -> type[0] == 'u' && $recent_activity -> type != 'u_s_p_c')
                                 
                                 {!! $recent_activity -> username !!} has shared to {!! $recent_activity -> name !!}
                                 
+                              @endif
+                              
+                              @if($recent_activity -> type == 'u_s_p_c')
+                              
+                                {!! $recent_activity -> username !!} has shared a profile to {!! $recent_activity -> name !!}
+                              
                               @endif
                               
                               @if(substr($recent_activity -> type, -1) == 'u' && $recent_activity -> type[0] == 'u')
@@ -1394,43 +1406,43 @@
                               
                               @if($recent_activity -> type == 'p_t_todo_c' || $recent_activity -> type == 'p_t_todo_u' || $recent_activity -> type == 'p_t_todo_d')
                               
-                                a project topic <a href="{!! route('projectTopicTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project topic task <a href="{!! route('projectTopicTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
                               @if($recent_activity -> type == 'p_t_s_todo_c' || $recent_activity -> type == 'p_t_s_todo_u' || $recent_activity -> type == 'p_t_s_todo_d')
                               
-                                a project section <a href="{!! route('projectTopicSectionTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project section task <a href="{!! route('projectTopicSectionTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
                               @if($recent_activity -> type == 'p_t_s_f_todo_c' || $recent_activity -> type == 'p_t_s_f_todo_u' || $recent_activity -> type == 'p_t_s_f_todo_d')
                               
-                                a project file <a href="{!! route('projectTSFileTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project file task <a href="{!! route('projectTSFileTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
                               @if($recent_activity -> type == 'p_t_s_n_todo_c' || $recent_activity -> type == 'p_t_s_n_todo_u' || $recent_activity -> type == 'p_t_s_n_todo_d')
                               
-                                a project note <a href="{!! route('projectTSNoteTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project note task <a href="{!! route('projectTSNoteTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
                               @if($recent_activity -> type == 'p_t_s_g_todo_c' || $recent_activity -> type == 'p_t_s_g_todo_u' || $recent_activity -> type == 'p_t_s_g_todo_d')
                               
-                                a project galery <a href="{!! route('projectTSGaleryTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project galery task <a href="{!! route('projectTSGaleryTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
                               @if($recent_activity -> type == 'p_t_s_p_t_c' || $recent_activity -> type == 'p_t_s_p_t_u' || $recent_activity -> type == 'p_t_s_p_t_d')
                               
-                                a project playlist <a href="{!! route('projectTSPTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project playlist task <a href="{!! route('projectTSPTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
                               @if($recent_activity -> type == 'p_t_s_t_todo_c' || $recent_activity -> type == 'p_t_s_t_todo_u' || $recent_activity -> type == 'p_t_s_t_todo_d')
                               
-                                a project tool <a href="{!! route('projectTSToolTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
+                                a project tool task <a href="{!! route('projectTSToolTodolists.show', [$recent_activity -> entity_id]) !!}">{!! $recent_activity -> name !!}</a>
                                 
                               @endif
                               
@@ -2135,10 +2147,10 @@
                                       <tr>
                                         <td><div class="icheckbox_flat-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="{!! route('messages.show', [$r_message->id]) !!}">{{$r_message -> name}}</a></td>
-                                        <td class="mailbox-subject"><b>{{$r_message -> subject}}</b></td>
-                                        <td class="mailbox-attachment">{{$r_message -> content}}</td>
-                                        <td class="mailbox-date">{{$r_message -> datetime}}</td>
+                                        <td style="min-width: 100px;" class="mailbox-name"><a href="{!! route('messages.show', [$r_message->id]) !!}">{{$r_message -> name}}</a></td>
+                                        <td style="min-width: 100px;" class="mailbox-subject"><b>{{$r_message -> subject}}</b></td>
+                                        <td style="min-width: 500px; text-align: justify;" class="mailbox-attachment">{{$r_message -> content}}</td>
+                                        <td style="min-width: 150px;" class="mailbox-date">{{$r_message -> datetime}}</td>
                                       </tr>
                                       
                                     {!! Form::close() !!}
@@ -2284,11 +2296,11 @@
                                         
                                         <td><div class="icheckbox_flat-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="{!! route('messages.show', [$s_message->id]) !!}">{{$s_message -> name}}</a></td>
-                                        <td class="mailbox-subject"><b>{{$s_message -> subject}}</b></td>
-                                        <td class="mailbox-attachment">{{$s_message -> content}}</td>
-                                        <td class="mailbox-date">{{$s_message -> datetime}}</td>
-                                        <td> {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!} </td>
+                                        <td style="min-width: 100px;" class="mailbox-name"><a href="{!! route('messages.show', [$s_message->id]) !!}">{{$s_message -> name}}</a></td>
+                                        <td style="min-width: 100px;" class="mailbox-subject"><b>{{$s_message -> subject}}</b></td>
+                                        <td style="min-width: 500px; text-align: justify;" class="mailbox-attachment">{{$s_message -> content}}</td>
+                                        <td style="min-width: 150px; text-align: center;" class="mailbox-date">{{$s_message -> datetime}}</td>
+                                        <td style="min-width: 60px;"> {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!} </td>
                                       
                                       </tr>
                                       

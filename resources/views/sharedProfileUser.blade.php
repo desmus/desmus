@@ -798,7 +798,7 @@
     
   <section class="content-header">
         
-    <h1 class="pull-left"> Profile User </h1>
+    <h1 class="pull-left"> Shared Profile User </h1>
     
   </section>
   

@@ -24,7 +24,7 @@
           
           @endif
           
-          <li><a href="/images/public_audios/audio_{!! $publicAudio -> id !!}.{!! $publicAudio -> file_type !!}" download> Download Audio </a></li>
+          <li><a href="/audios/public_audios/audio_{!! $publicAudio -> id !!}.{!! $publicAudio -> file_type !!}" download> Download Audio </a></li>
           
         </ul>
         

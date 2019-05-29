@@ -961,7 +961,7 @@
     
   <section class="content-header">
         
-    <h1 class="pull-left"> Profile User </h1>
+    <h1 class="pull-left"> Public Profile User </h1>
     
   </section>
   

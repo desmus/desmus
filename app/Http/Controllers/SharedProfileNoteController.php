@@ -78,7 +78,7 @@ class SharedProfileNoteController extends AppBaseController
             $i += 1;
         }
                 
-        $text = '';
+        $text = $sharedProfileNote -> content;
             
         if($request->file('image'))
         {
@@ -89,7 +89,7 @@ class SharedProfileNoteController extends AppBaseController
             $gcvRequest = new GoogleCloudVision([$request], 'AIzaSyCiYAx75dCXDnjUNPIOzlqTp0H7Up9AQh8');
             $response = $gcvRequest->annotate();
             
-            $text = $response->responses[0]->fullTextAnnotation->text;
+            $text = $text . $response->responses[0]->fullTextAnnotation->text;
         }
             
         $files_list = DB::table('shared_profile_file')->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('name', 'desc')->limit(10)->get();

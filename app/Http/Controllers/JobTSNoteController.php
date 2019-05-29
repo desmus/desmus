@@ -65,7 +65,7 @@ class JobTSNoteController extends AppBaseController
                 $jobTSNoteTodolist = DB::table('jobs')->join('job_topics', 'jobs.id', '=', 'job_topics.job_id')->join('job_topic_sections', 'job_topics.id', '=', 'job_topic_sections.job_topic_id')->join('job_t_s_notes', 'job_topic_sections.id', '=', 'job_t_s_notes.job_topic_section_id')->join('job_t_s_note_todolists', 'job_t_s_notes.id', '=', 'job_t_s_note_todolists.j_t_s_n_id')->where('job_t_s_note_todolists.j_t_s_n_id', '=', $jobTSNote -> id)->where(function ($query) {$query->where('job_t_s_note_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('job_t_s_note_todolists.status', '=', 'active');})->orderBy('job_t_s_note_todolists.datetime', 'desc')->limit(50)->get();
                 $jobTSNoteTodolistCompleted = DB::table('jobs')->join('job_topics', 'jobs.id', '=', 'job_topics.job_id')->join('job_topic_sections', 'job_topics.id', '=', 'job_topic_sections.job_topic_id')->join('job_t_s_notes', 'job_topic_sections.id', '=', 'job_t_s_notes.job_topic_section_id')->join('job_t_s_note_todolists', 'job_t_s_notes.id', '=', 'job_t_s_note_todolists.j_t_s_n_id')->where('job_t_s_note_todolists.j_t_s_n_id', '=', $jobTSNote -> id)->where(function ($query) {$query->where('job_t_s_note_todolists.status', '=', 'finalized');})->where(function ($query) {$query->where('job_t_s_note_todolists.deleted_at', '=', null);})->orderBy('job_t_s_note_todolists.datetime', 'desc')->limit(50)->get();
             
-                $text = '';
+                $text = $jobTSNote -> content;
             
                 if($request->file('image'))
                 {
@@ -76,7 +76,7 @@ class JobTSNoteController extends AppBaseController
                     $gcvRequest = new GoogleCloudVision([$request], 'AIzaSyCiYAx75dCXDnjUNPIOzlqTp0H7Up9AQh8');
                     $response = $gcvRequest->annotate();
             
-                    $text = $response->responses[0]->fullTextAnnotation->text;
+                    $text = $text . $response->responses[0]->fullTextAnnotation->text;
                 }
                 
                 $jobTSNoteTodolistsList = DB::table('jobs')->join('job_topics', 'jobs.id', '=', 'job_topics.job_id')->join('job_topic_sections', 'job_topics.id', '=', 'job_topic_sections.job_topic_id')->join('job_t_s_notes', 'job_topic_sections.id', '=', 'job_t_s_notes.job_topic_section_id')->join('job_t_s_note_todolists', 'job_t_s_notes.id', '=', 'job_t_s_note_todolists.j_t_s_n_id')->where('job_t_s_note_todolists.j_t_s_n_id', '=', $jobTSNote -> id)->where(function ($query) {$query->where('job_t_s_note_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('job_t_s_note_todolists.status', '=', 'active');})->orderBy('job_t_s_note_todolists.datetime', 'desc')->limit(5)->get();

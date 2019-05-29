@@ -3,7 +3,7 @@
   <p>{!! $sharedProfileNoteCResponse->id !!}</p>
 </div>
 
-<div class="form-group">
+<div class="form-group" style="text-align: justify; margin-right: 20px;">
   {!! Form::label('content', 'Content:') !!}
   <p>{!! $sharedProfileNoteCResponse->content !!}</p>
 </div>

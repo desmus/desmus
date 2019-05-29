@@ -65,7 +65,7 @@ class ProjectTSNoteController extends AppBaseController
                 $projectTSNoteTodolist = DB::table('projects')->join('project_topics', 'projects.id', '=', 'project_topics.project_id')->join('project_topic_sections', 'project_topics.id', '=', 'project_topic_sections.project_topic_id')->join('project_t_s_notes', 'project_topic_sections.id', '=', 'project_t_s_notes.project_topic_section_id')->join('project_t_s_note_todolists', 'project_t_s_notes.id', '=', 'project_t_s_note_todolists.p_t_s_n_id')->where('project_t_s_note_todolists.p_t_s_n_id', '=', $projectTSNote -> id)->where(function ($query) {$query->where('project_t_s_note_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('project_t_s_note_todolists.status', '=', 'active');})->orderBy('project_t_s_note_todolists.datetime', 'desc')->limit(50)->get();
                 $projectTSNoteTodolistCompleted = DB::table('projects')->join('project_topics', 'projects.id', '=', 'project_topics.project_id')->join('project_topic_sections', 'project_topics.id', '=', 'project_topic_sections.project_topic_id')->join('project_t_s_notes', 'project_topic_sections.id', '=', 'project_t_s_notes.project_topic_section_id')->join('project_t_s_note_todolists', 'project_t_s_notes.id', '=', 'project_t_s_note_todolists.p_t_s_n_id')->where('project_t_s_note_todolists.p_t_s_n_id', '=', $projectTSNote -> id)->where(function ($query) {$query->where('project_t_s_note_todolists.status', '=', 'finalized');})->where(function ($query) {$query->where('project_t_s_note_todolists.deleted_at', '=', null);})->orderBy('project_t_s_note_todolists.datetime', 'desc')->limit(50)->get();
             
-                $text = '';
+                $text = $projectTSNote -> content;
             
                 if($request->file('image'))
                 {
@@ -76,7 +76,7 @@ class ProjectTSNoteController extends AppBaseController
                     $gcvRequest = new GoogleCloudVision([$request], 'AIzaSyCiYAx75dCXDnjUNPIOzlqTp0H7Up9AQh8');
                     $response = $gcvRequest->annotate();
             
-                    $text = $response->responses[0]->fullTextAnnotation->text;
+                    $text = $text . $response->responses[0]->fullTextAnnotation->text;
                 }
                 
                 $projectTSNoteTodolistsList = DB::table('projects')->join('project_topics', 'projects.id', '=', 'project_topics.project_id')->join('project_topic_sections', 'project_topics.id', '=', 'project_topic_sections.project_topic_id')->join('project_t_s_notes', 'project_topic_sections.id', '=', 'project_t_s_notes.project_topic_section_id')->join('project_t_s_note_todolists', 'project_t_s_notes.id', '=', 'project_t_s_note_todolists.p_t_s_n_id')->where('project_t_s_note_todolists.p_t_s_n_id', '=', $projectTSNote -> id)->where(function ($query) {$query->where('project_t_s_note_todolists.deleted_at', '=', null);})->where(function ($query) {$query->where('project_t_s_note_todolists.status', '=', 'active');})->orderBy('project_t_s_note_todolists.datetime', 'desc')->limit(5)->get();
