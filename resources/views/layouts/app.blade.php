@@ -457,9 +457,14 @@
         audio.src = '/audios/personal_datas/audio_'+audio_name+'.mp3';
       }
       
-      else
+      else if(audio_type == 'public_audio')
       {
         audio.src = '/audios/public_audios/audio_'+audio_name+'.mp3';
+      }
+      
+      else if(audio_type == 'shared_profile_audio')
+      {
+        audio.src = '/audios/shared_profile_audios/audio_'+audio_name+'.mp3';
       }
 
       audio.controls = true;
