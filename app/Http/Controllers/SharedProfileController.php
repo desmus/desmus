@@ -22,11 +22,11 @@ class SharedProfileController extends Controller
             $user_id = Auth::user()->id;
             $user = DB::table('users')->where('id', '=', $user_id)->get();
         
-            $files = DB::table('shared_profile_file')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(50, ['*'], 'file_p');
-            $notes = DB::table('shared_profile_note')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_note.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(50, ['*'], 'note_p');
-            $images = DB::table('shared_profile_image')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_image.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(50, ['*'], 'image_p');
-            $audios = DB::table('shared_profile_audio')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_audio.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(50, ['*'], 'audio_p');
-            $videos = DB::table('shared_profile_video')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_video.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(50, ['*'], 'video_p');
+            $files = DB::table('shared_profile_file')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'file_p');
+            $notes = DB::table('shared_profile_note')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_note.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'note_p');
+            $images = DB::table('shared_profile_image')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_image.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'image_p');
+            $audios = DB::table('shared_profile_audio')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_audio.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'audio_p');
+            $videos = DB::table('shared_profile_video')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_video.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'video_p');
             
             $shared_profile_file_comments_list = DB::table('shared_profile_file_c')->join('shared_profile_file', 'shared_profile_file.id', '=', 'shared_profile_file_c.s_p_f_id')->select('shared_profile_file.id', 'shared_profile_file.name', 'shared_profile_file_c.content', 'shared_profile_file_c.created_at')->where('shared_profile_file_c.user_id', '=', $user_id)->where(function ($query) {$query->where('shared_profile_file_c.deleted_at', '=', null);})->orderBy('shared_profile_file_c.created_at', 'desc')->paginate(50, ['*'], 'file_comment_list_p');
             $shared_profile_file_comment_responses_list = DB::table('shared_profile_file_c_response')->join('shared_profile_file_c', 'shared_profile_file_c.id', '=', 'shared_profile_file_c_response.s_p_f_c_id')->join('shared_profile_file', 'shared_profile_file.id', '=', 'shared_profile_file_c.s_p_f_id')->select('shared_profile_file.id', 'shared_profile_file.name', 'shared_profile_file_c_response.content', 'shared_profile_file_c_response.created_at')->where('shared_profile_file_c_response.user_id', '=', $user_id)->where(function ($query) {$query->where('shared_profile_file_c_response.deleted_at', '=', null);})->orderBy('shared_profile_file_c_response.created_at', 'desc')->paginate(50, ['*'], 'file_comment_response_list_p');
@@ -372,11 +372,11 @@ class SharedProfileController extends Controller
                 }
             }
             
-            $shared_profile_files_list = DB::table('shared_profile_file')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'shared_profile_file_list_p');
-            $shared_profile_notes_list = DB::table('shared_profile_note')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_note.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'shared_profile_note_list_p');
-            $shared_profile_images_list = DB::table('shared_profile_image')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_image.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'shared_profile_image_list_p');
-            $shared_profile_audios_list = DB::table('shared_profile_audio')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_audio.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'shared_profile_audio_list_p');
-            $shared_profile_videos_list = DB::table('shared_profile_video')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_video.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'shared_profile_video_list_p');
+            $shared_profile_files_list = DB::table('shared_profile_file')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'shared_profile_file_list_p');
+            $shared_profile_notes_list = DB::table('shared_profile_note')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_note.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'shared_profile_note_list_p');
+            $shared_profile_images_list = DB::table('shared_profile_image')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_image.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'shared_profile_image_list_p');
+            $shared_profile_audios_list = DB::table('shared_profile_audio')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_audio.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'shared_profile_audio_list_p');
+            $shared_profile_videos_list = DB::table('shared_profile_video')->where('user_id', $user_id)->where(function ($query) {$query->where('shared_profile_video.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'shared_profile_video_list_p');
             
             $i = 0;
             $j = 0;
@@ -388,7 +388,7 @@ class SharedProfileController extends Controller
             {
                 foreach($shared_profile_files_list as $shared_profile_file_list)
                 {
-                    $shared_profile_file_users_list[$i] = DB::table('shared_profile_file')->join('users', 'shared_profile_file.user_id', '=', 'users.id')->where('shared_profile_file.id', '=', $shared_profile_file_list -> id)->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('shared_profile_file.created_at', 'desc')->paginate(30, ['*'], 'file_user_list_p');
+                    $shared_profile_file_users_list[$i] = DB::table('shared_profile_file')->join('users', 'shared_profile_file.user_id', '=', 'users.id')->where('shared_profile_file.id', '=', $shared_profile_file_list -> id)->where(function ($query) {$query->where('shared_profile_file.deleted_at', '=', null);})->orderBy('shared_profile_file.created_at', 'desc')->paginate(100, ['*'], 'file_user_list_p');
                     $shared_profile_file_likes_list[$i] = DB::table('shared_profile_file_like')->where('s_p_f_id', '=', $shared_profile_file_list -> id)->where(function ($query) {$query->where('shared_profile_file_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                     $i += 1;
                 }
@@ -404,7 +404,7 @@ class SharedProfileController extends Controller
             {
                 foreach($shared_profile_notes_list as $shared_profile_note_list)
                 {
-                    $shared_profile_note_users_list[$i] = DB::table('shared_profile_note')->join('users', 'shared_profile_note.user_id', '=', 'users.id')->where('shared_profile_note.id', '=', $shared_profile_note_list -> id)->where(function ($query) {$query->where('shared_profile_note.deleted_at', '=', null);})->orderBy('shared_profile_note.created_at', 'desc')->paginate(30, ['*'], 'note_user_list_p');
+                    $shared_profile_note_users_list[$i] = DB::table('shared_profile_note')->join('users', 'shared_profile_note.user_id', '=', 'users.id')->where('shared_profile_note.id', '=', $shared_profile_note_list -> id)->where(function ($query) {$query->where('shared_profile_note.deleted_at', '=', null);})->orderBy('shared_profile_note.created_at', 'desc')->paginate(100, ['*'], 'note_user_list_p');
                     $shared_profile_note_likes_list[$i] = DB::table('shared_profile_note_like')->where('s_p_n_id', '=', $shared_profile_note_list -> id)->where(function ($query) {$query->where('shared_profile_note_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                     $i += 1;
                 }
@@ -420,7 +420,7 @@ class SharedProfileController extends Controller
             {
                 foreach($shared_profile_images_list as $shared_profile_image_list)
                 {
-                    $shared_profile_image_users_list[$i] = DB::table('shared_profile_image')->join('users', 'shared_profile_image.user_id', '=', 'users.id')->where('shared_profile_image.id', '=', $shared_profile_image_list -> id)->where(function ($query) {$query->where('shared_profile_image.deleted_at', '=', null);})->orderBy('shared_profile_image.created_at', 'desc')->paginate(30, ['*'], 'image_user_list_p');
+                    $shared_profile_image_users_list[$i] = DB::table('shared_profile_image')->join('users', 'shared_profile_image.user_id', '=', 'users.id')->where('shared_profile_image.id', '=', $shared_profile_image_list -> id)->where(function ($query) {$query->where('shared_profile_image.deleted_at', '=', null);})->orderBy('shared_profile_image.created_at', 'desc')->paginate(100, ['*'], 'image_user_list_p');
                     $shared_profile_image_likes_list[$i] = DB::table('shared_profile_image_like')->where('s_p_i_id', '=', $shared_profile_image_list -> id)->where(function ($query) {$query->where('shared_profile_image_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                     $i += 1;
                 }
@@ -436,7 +436,7 @@ class SharedProfileController extends Controller
             {
                 foreach($shared_profile_audios_list as $shared_profile_audio_list)
                 {
-                    $shared_profile_audio_users_list[$i] = DB::table('shared_profile_audio')->join('users', 'shared_profile_audio.user_id', '=', 'users.id')->where('shared_profile_audio.id', '=', $shared_profile_audio_list -> id)->where(function ($query) {$query->where('shared_profile_audio.deleted_at', '=', null);})->orderBy('shared_profile_audio.created_at', 'desc')->paginate(30, ['*'], 'audio_user_list_p');
+                    $shared_profile_audio_users_list[$i] = DB::table('shared_profile_audio')->join('users', 'shared_profile_audio.user_id', '=', 'users.id')->where('shared_profile_audio.id', '=', $shared_profile_audio_list -> id)->where(function ($query) {$query->where('shared_profile_audio.deleted_at', '=', null);})->orderBy('shared_profile_audio.created_at', 'desc')->paginate(100, ['*'], 'audio_user_list_p');
                     $shared_profile_audio_likes_list[$i] = DB::table('shared_profile_audio_like')->where('s_p_a_id', '=', $shared_profile_audio_list -> id)->where(function ($query) {$query->where('shared_profile_audio_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                     $i += 1;
                 }
@@ -452,7 +452,7 @@ class SharedProfileController extends Controller
             {
                 foreach($shared_profile_videos_list as $shared_profile_video_list)
                 {
-                    $shared_profile_video_users_list[$i] = DB::table('shared_profile_video')->join('users', 'shared_profile_video.user_id', '=', 'users.id')->where('shared_profile_video.id', '=', $shared_profile_video_list -> id)->where(function ($query) {$query->where('shared_profile_video.deleted_at', '=', null);})->orderBy('shared_profile_video.created_at', 'desc')->paginate(30, ['*'], 'video_user_p');
+                    $shared_profile_video_users_list[$i] = DB::table('shared_profile_video')->join('users', 'shared_profile_video.user_id', '=', 'users.id')->where('shared_profile_video.id', '=', $shared_profile_video_list -> id)->where(function ($query) {$query->where('shared_profile_video.deleted_at', '=', null);})->orderBy('shared_profile_video.created_at', 'desc')->paginate(100, ['*'], 'video_user_p');
                     $shared_profile_video_likes_list[$i] = DB::table('shared_profile_video_like')->where('s_p_v_id', '=', $shared_profile_video_list -> id)->where(function ($query) {$query->where('shared_profile_video_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                     $i += 1;
                 }

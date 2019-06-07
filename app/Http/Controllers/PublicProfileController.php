@@ -313,12 +313,12 @@ class PublicProfileController extends Controller
             }
         }
         
-        $public_files_list = DB::table('public_file')->where(function ($query) {$query->where('public_file.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'public_file_list_p');
-        $public_notes_list = DB::table('public_note')->where(function ($query) {$query->where('public_note.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'public_note_list_p');
-        $public_images_list = DB::table('public_image')->where(function ($query) {$query->where('public_image.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'public_image_list_p');
-        $public_audios_list = DB::table('public_audio')->where(function ($query) {$query->where('public_audio.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'public_audio_list_p');
-        $public_videos_list = DB::table('public_video')->where(function ($query) {$query->where('public_video.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'public_video_list_p');
-        $public_advertisements_list = DB::table('public_advertisement')->where(function ($query) {$query->where('public_advertisement.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(30, ['*'], 'public_advertising_list_p');
+        $public_files_list = DB::table('public_file')->where(function ($query) {$query->where('public_file.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'public_file_list_p');
+        $public_notes_list = DB::table('public_note')->where(function ($query) {$query->where('public_note.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'public_note_list_p');
+        $public_images_list = DB::table('public_image')->where(function ($query) {$query->where('public_image.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'public_image_list_p');
+        $public_audios_list = DB::table('public_audio')->where(function ($query) {$query->where('public_audio.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'public_audio_list_p');
+        $public_videos_list = DB::table('public_video')->where(function ($query) {$query->where('public_video.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'public_video_list_p');
+        $public_advertisements_list = DB::table('public_advertisement')->where(function ($query) {$query->where('public_advertisement.deleted_at', '=', null);})->orderBy('created_at', 'desc')->paginate(100, ['*'], 'public_advertising_list_p');
 
         $i = 0;
         $j = 0;
@@ -330,7 +330,7 @@ class PublicProfileController extends Controller
         {
             foreach($public_files_list as $public_file_list)
             {
-                $public_file_users_list[$i] = DB::table('public_file')->join('users', 'public_file.user_id', '=', 'users.id')->where('public_file.id', '=', $public_file_list -> id)->where(function ($query) {$query->where('public_file.deleted_at', '=', null);})->orderBy('public_file.created_at', 'desc')->paginate(30, ['*'], 'file_user_list_p');
+                $public_file_users_list[$i] = DB::table('public_file')->join('users', 'public_file.user_id', '=', 'users.id')->where('public_file.id', '=', $public_file_list -> id)->where(function ($query) {$query->where('public_file.deleted_at', '=', null);})->orderBy('public_file.created_at', 'desc')->paginate(100, ['*'], 'file_user_list_p');
                 $public_file_likes_list[$i] = DB::table('public_file_like')->where('public_file_id', '=', $public_file_list -> id)->where(function ($query) {$query->where('public_file_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                 $i += 1;
             }
@@ -346,7 +346,7 @@ class PublicProfileController extends Controller
         {
             foreach($public_notes_list as $public_note_list)
             {
-                $public_note_users_list[$i] = DB::table('public_note')->join('users', 'public_note.user_id', '=', 'users.id')->where('public_note.id', '=', $public_note_list -> id)->where(function ($query) {$query->where('public_note.deleted_at', '=', null);})->orderBy('public_note.created_at', 'desc')->paginate(30, ['*'], 'note_user_list_p');
+                $public_note_users_list[$i] = DB::table('public_note')->join('users', 'public_note.user_id', '=', 'users.id')->where('public_note.id', '=', $public_note_list -> id)->where(function ($query) {$query->where('public_note.deleted_at', '=', null);})->orderBy('public_note.created_at', 'desc')->paginate(100, ['*'], 'note_user_list_p');
                 $public_note_likes_list[$i] = DB::table('public_note_like')->where('public_note_id', '=', $public_note_list -> id)->where(function ($query) {$query->where('public_note_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                 $i += 1;
             }
@@ -362,7 +362,7 @@ class PublicProfileController extends Controller
         {
             foreach($public_images_list as $public_image_list)
             {
-                $public_image_users_list[$i] = DB::table('public_image')->join('users', 'public_image.user_id', '=', 'users.id')->where('public_image.id', '=', $public_image_list -> id)->where(function ($query) {$query->where('public_image.deleted_at', '=', null);})->orderBy('public_image.created_at', 'desc')->paginate(30, ['*'], 'image_user_list_p');
+                $public_image_users_list[$i] = DB::table('public_image')->join('users', 'public_image.user_id', '=', 'users.id')->where('public_image.id', '=', $public_image_list -> id)->where(function ($query) {$query->where('public_image.deleted_at', '=', null);})->orderBy('public_image.created_at', 'desc')->paginate(100, ['*'], 'image_user_list_p');
                 $public_image_likes_list[$i] = DB::table('public_image_like')->where('public_image_id', '=', $public_image_list -> id)->where(function ($query) {$query->where('public_image_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                 $i += 1;
             }
@@ -378,7 +378,7 @@ class PublicProfileController extends Controller
         {
             foreach($public_audios_list as $public_audio_list)
             {
-                $public_audio_users_list[$i] = DB::table('public_audio')->join('users', 'public_audio.user_id', '=', 'users.id')->where('public_audio.id', '=', $public_audio_list -> id)->where(function ($query) {$query->where('public_audio.deleted_at', '=', null);})->orderBy('public_audio.created_at', 'desc')->paginate(30, ['*'], 'audio_user_list_p');
+                $public_audio_users_list[$i] = DB::table('public_audio')->join('users', 'public_audio.user_id', '=', 'users.id')->where('public_audio.id', '=', $public_audio_list -> id)->where(function ($query) {$query->where('public_audio.deleted_at', '=', null);})->orderBy('public_audio.created_at', 'desc')->paginate(100, ['*'], 'audio_user_list_p');
                 $public_audio_likes_list[$i] = DB::table('public_audio_like')->where('public_audio_id', '=', $public_audio_list -> id)->where(function ($query) {$query->where('public_audio_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                 $i += 1;
             }
@@ -394,7 +394,7 @@ class PublicProfileController extends Controller
         {
             foreach($public_videos_list as $public_video_list)
             {
-                $public_video_users_list[$i] = DB::table('public_video')->join('users', 'public_video.user_id', '=', 'users.id')->where('public_video.id', '=', $public_video_list -> id)->where(function ($query) {$query->where('public_video.deleted_at', '=', null);})->orderBy('public_video.created_at', 'desc')->paginate(30, ['*'], 'video_user_p');
+                $public_video_users_list[$i] = DB::table('public_video')->join('users', 'public_video.user_id', '=', 'users.id')->where('public_video.id', '=', $public_video_list -> id)->where(function ($query) {$query->where('public_video.deleted_at', '=', null);})->orderBy('public_video.created_at', 'desc')->paginate(100, ['*'], 'video_user_p');
                 $public_video_likes_list[$i] = DB::table('public_video_like')->where('public_video_id', '=', $public_video_list -> id)->where(function ($query) {$query->where('public_video_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                 $i += 1;
             }
@@ -410,7 +410,7 @@ class PublicProfileController extends Controller
         {
             foreach($public_advertisements_list as $public_advertisement_list)
             {
-                $public_advertisement_users_list[$i] = DB::table('public_advertisement')->join('users', 'public_advertisement.user_id', '=', 'users.id')->where('public_advertisement.id', '=', $public_advertisement_list -> id)->where(function ($query) {$query->where('public_advertisement.deleted_at', '=', null);})->orderBy('public_advertisement.created_at', 'desc')->paginate(30, ['*'], 'advertisement_user_p');
+                $public_advertisement_users_list[$i] = DB::table('public_advertisement')->join('users', 'public_advertisement.user_id', '=', 'users.id')->where('public_advertisement.id', '=', $public_advertisement_list -> id)->where(function ($query) {$query->where('public_advertisement.deleted_at', '=', null);})->orderBy('public_advertisement.created_at', 'desc')->paginate(100, ['*'], 'advertisement_user_p');
                 $public_advertisement_likes_list[$i] = DB::table('public_advertisement_like')->where('public_advertisement_id', '=', $public_advertisement_list -> id)->where(function ($query) {$query->where('public_advertisement_like.deleted_at', '=', null);})->orderBy('created_at', 'desc')->get();
                 $i += 1;
             }

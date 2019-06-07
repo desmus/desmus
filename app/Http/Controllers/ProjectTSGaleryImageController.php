@@ -120,8 +120,8 @@ class ProjectTSGaleryImageController extends AppBaseController
                 DB::table('project_t_s_galery_images')->where('id', $id)->update(['views_quantity' => DB::raw('views_quantity + 1')]);
         
                 $projectTSGaleryImage = $this->projectTSGaleryImageRepository->findWithoutFail($id);
-                $projectTopicSectionGaleryImageViews = DB::table('users')->join('project_t_s_galery_image_views', 'users.id', '=', 'project_t_s_galery_image_views.user_id')->where('project_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(50)->get();
-                $projectTopicSectionGaleryImageUpdates = DB::table('users')->join('project_t_s_galery_image_updates', 'users.id', '=', 'project_t_s_galery_image_updates.user_id')->where('project_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(50)->get();
+                $projectTopicSectionGaleryImageViews = DB::table('users')->join('project_t_s_galery_image_views', 'users.id', '=', 'project_t_s_galery_image_views.user_id')->where('project_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(100)->get();
+                $projectTopicSectionGaleryImageUpdates = DB::table('users')->join('project_t_s_galery_image_updates', 'users.id', '=', 'project_t_s_galery_image_updates.user_id')->where('project_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(100)->get();
 
                 $userProjectTSGImagesList = DB::table('user_project_t_s_galery_images')->join('users', 'user_project_t_s_galery_images.user_id', '=', 'users.id')->select('name', 'email', 'user_project_t_s_galery_images.description', 'permissions', 'user_project_t_s_galery_images.datetime', 'user_project_t_s_galery_images.id', 'project_t_s_g_image_id')->where('project_t_s_g_image_id', $id)->where(function ($query) {$query->where('user_project_t_s_galery_images.deleted_at', '=', null);})->orderBy('datetime', 'desc')->get();
                 $projectTSGaleryImageViewsList = DB::table('users')->join('project_t_s_galery_image_views', 'users.id', '=', 'project_t_s_galery_image_views.user_id')->where('project_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(10)->get();
