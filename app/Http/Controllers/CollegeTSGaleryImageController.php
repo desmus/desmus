@@ -120,8 +120,8 @@ class CollegeTSGaleryImageController extends AppBaseController
                 DB::table('college_t_s_galery_images')->where('id', $id)->update(['views_quantity' => DB::raw('views_quantity + 1')]);
         
                 $collegeTSGaleryImage = $this->collegeTSGaleryImageRepository->findWithoutFail($id);
-                $collegeTopicSectionGaleryImageViews = DB::table('users')->join('college_t_s_galery_image_views', 'users.id', '=', 'college_t_s_galery_image_views.user_id')->where('college_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(100)->get();
-                $collegeTopicSectionGaleryImageUpdates = DB::table('users')->join('college_t_s_galery_image_updates', 'users.id', '=', 'college_t_s_galery_image_updates.user_id')->where('college_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(100)->get();
+                $collegeTopicSectionGaleryImageViews = DB::table('users')->join('college_t_s_galery_image_views', 'users.id', '=', 'college_t_s_galery_image_views.user_id')->where('college_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(50)->get();
+                $collegeTopicSectionGaleryImageUpdates = DB::table('users')->join('college_t_s_galery_image_updates', 'users.id', '=', 'college_t_s_galery_image_updates.user_id')->where('college_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(50)->get();
 
                 $userCollegeTSGImagesList = DB::table('user_college_t_s_galery_images')->join('users', 'user_college_t_s_galery_images.user_id', '=', 'users.id')->select('name', 'email', 'user_college_t_s_galery_images.description', 'permissions', 'user_college_t_s_galery_images.datetime', 'user_college_t_s_galery_images.id', 'college_t_s_g_image_id')->where('college_t_s_g_image_id', $id)->where(function ($query) {$query->where('user_college_t_s_galery_images.deleted_at', '=', null);})->orderBy('datetime', 'desc')->get();
                 $collegeTSGaleryImageViewsList = DB::table('users')->join('college_t_s_galery_image_views', 'users.id', '=', 'college_t_s_galery_image_views.user_id')->where('college_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(10)->get();

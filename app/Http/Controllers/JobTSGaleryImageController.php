@@ -120,8 +120,8 @@ class JobTSGaleryImageController extends AppBaseController
                 DB::table('job_t_s_galery_images')->where('id', $id)->update(['views_quantity' => DB::raw('views_quantity + 1')]);
         
                 $jobTSGaleryImage = $this->jobTSGaleryImageRepository->findWithoutFail($id);
-                $jobTopicSectionGaleryImageViews = DB::table('users')->join('job_t_s_galery_image_views', 'users.id', '=', 'job_t_s_galery_image_views.user_id')->where('job_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(100)->get();
-                $jobTopicSectionGaleryImageUpdates = DB::table('users')->join('job_t_s_galery_image_updates', 'users.id', '=', 'job_t_s_galery_image_updates.user_id')->where('job_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(100)->get();
+                $jobTopicSectionGaleryImageViews = DB::table('users')->join('job_t_s_galery_image_views', 'users.id', '=', 'job_t_s_galery_image_views.user_id')->where('job_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(50)->get();
+                $jobTopicSectionGaleryImageUpdates = DB::table('users')->join('job_t_s_galery_image_updates', 'users.id', '=', 'job_t_s_galery_image_updates.user_id')->where('job_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(50)->get();
 
                 $userJobTSGImagesList = DB::table('user_job_t_s_galery_images')->join('users', 'user_job_t_s_galery_images.user_id', '=', 'users.id')->select('name', 'email', 'user_job_t_s_galery_images.description', 'permissions', 'user_job_t_s_galery_images.datetime', 'user_job_t_s_galery_images.id', 'job_t_s_g_image_id')->where('job_t_s_g_image_id', $id)->where(function ($query) {$query->where('user_job_t_s_galery_images.deleted_at', '=', null);})->orderBy('datetime', 'desc')->get();
                 $jobTSGaleryImageViewsList = DB::table('users')->join('job_t_s_galery_image_views', 'users.id', '=', 'job_t_s_galery_image_views.user_id')->where('job_t_s_g_image_id', $id)->orderBy('datetime', 'desc')->limit(10)->get();
