@@ -146,22 +146,22 @@
                                     
                     @if($personal_data_image_p < 1)
                         
-                      <a href = "http://desmus-jmsp.c9users.io/personalDataTSGaleries/{!! $id !!}?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                      <a href = "http://desmus-jmsp.c9users.io/personalDataTSGaleries/{!! $id !!}?personal_data_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                      <a href = "http://www.desmus.com.mx/personalDataTSGaleries/{!! $id !!}?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                      <a href = "http://www.desmus.com.mx/personalDataTSGaleries/{!! $id !!}?personal_data_image_p=2" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                           
                     @endif
                           
                     @if($personal_data_image_p == 1)
                                       
-                      <a href = "http://desmus-jmsp.c9users.io/personalDataTSGaleries/{!! $id !!}?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                      <a href = "http://desmus-jmsp.c9users.io/personalDataTSGaleries/{!! $id !!}?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                      <a href = "http://www.desmus.com.mx/personalDataTSGaleries/{!! $id !!}?personal_data_image_p=1" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                      <a href = "http://www.desmus.com.mx/personalDataTSGaleries/{!! $id !!}?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
   
                     @endif
                           
                     @if($personal_data_image_p > 1)
                           
-                      <a href = "http://desmus-jmsp.c9users.io/personalDataTSGaleries/{!! $id !!}?personal_data_image_p={!! $personal_data_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
-                      <a href = "http://desmus-jmsp.c9users.io/personalDataTSGaleries/{!! $id !!}?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
+                      <a href = "http://www.desmus.com.mx/personalDataTSGaleries/{!! $id !!}?personal_data_image_p={!! $personal_data_image_p - 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></a>
+                      <a href = "http://www.desmus.com.mx/personalDataTSGaleries/{!! $id !!}?personal_data_image_p={!! $personal_data_image_p + 1 !!}" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></a>
                             
                     @endif
                                     
