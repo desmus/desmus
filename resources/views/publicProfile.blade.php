@@ -4920,7 +4920,7 @@
                             
                                             <video width="100%" style="margin-bottom: 5px;" controls>
                                   
-                                              <source src="/videos/public_videos/video_{!! $publicVideo -> id !!}.{!! $publicVideo -> file_type !!}" type="video/mp4">
+                                              <source src="/videos/public_videos/video_{!! $publicVideoList -> id !!}.{!! $publicVideoList -> file_type !!}" type="video/mp4">
                                 
                                             </video>
                                             

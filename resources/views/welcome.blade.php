@@ -16,10 +16,10 @@
             
       html, body {
         /**background-color: #fff;**/
-        background-image: url(/images/background_4.jpeg);
+        background-image: url(/images/background_10.jpeg);
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: 68%;
+        background-size: 70%;
         color: #636b6f;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
